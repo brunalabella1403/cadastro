@@ -1,0 +1,567 @@
+<!DOCTYPE html><html lang="pt-BR"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1"><meta name="robots" content="noindex">
+<title>Abertura de empresa ou entidade — Elpee Contabilidade</title>
+<style>
+:root{--az:#00365d;--az2:#1f4c86;--am:#f6c416;--cz:#5a6a7d;--bg:#f3f5f9;--er:#c0392b}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);font-family:Arial,Helvetica,sans-serif;color:#1d2733;font-size:16px}
+.top{background:#fff;border-bottom:4px solid var(--am);padding:18px 16px;display:flex;align-items:center;gap:14px;position:relative;overflow:hidden}
+.top:after{content:"";position:absolute;right:0;top:0;width:170px;height:100%;background:linear-gradient(225deg,var(--az) 0 18%,var(--am) 18% 30%,var(--az2) 30% 52%,transparent 52%)}
+.marca b{display:block;color:var(--az);font-size:30px;line-height:1;letter-spacing:-.5px}.marca small{color:var(--az);letter-spacing:3px;font-weight:bold;font-size:11px}
+.w{max-width:720px;margin:0 auto;padding:16px}
+h1{color:var(--az);font-size:22px;margin:6px 0 4px}
+.sub{color:var(--cz);margin:0 0 12px;line-height:1.45;font-size:15px}
+fieldset{background:#fff;border:0;border-top:4px solid var(--az);border-radius:10px;padding:16px;margin:12px 0;box-shadow:0 1px 3px rgba(0,0,0,.08)}
+legend{display:block;width:100%;padding:0;margin:0 0 6px;font-size:18px;font-weight:bold;color:var(--az)}
+.c{margin:0}
+label{display:block;font-weight:bold;margin:12px 0 4px;font-size:15px}
+input,select,textarea{width:100%;padding:12px;border:1px solid #c6cfdb;border-radius:8px;font-size:16px;background:#fff}
+input:focus,select:focus,textarea:focus{outline:2px solid var(--am);border-color:var(--az)}
+input[type=file]{padding:9px}
+.op{display:flex;flex-wrap:wrap;gap:8px}
+.op label{font-weight:normal;margin:0;border:1px solid #c6cfdb;border-radius:20px;padding:9px 14px;cursor:pointer;background:#fff}
+.op input{display:none}
+.op label.on{background:var(--az);color:#fff;border-color:var(--az)}
+.op.err label{border-color:var(--er);background:#fff6f5}
+.esc label{display:block;font-weight:bold;border:1px solid #c6cfdb;border-radius:10px;padding:12px 14px;margin:0 0 8px;cursor:pointer;background:#fff}
+.esc label.on{border-color:var(--az);background:#eef3f9;box-shadow:inset 0 0 0 1px var(--az)}
+.esc input{display:none}
+.esc i{display:block;font-weight:normal;font-style:normal;color:var(--cz);font-size:13px;margin-top:5px;line-height:1.4}
+.esc.err label{border-color:var(--er);background:#fff6f5}
+.cep{font-size:13px;color:var(--cz);margin-top:3px}
+.aviso{background:#fff8e1;border:1px solid var(--am);border-radius:8px;padding:12px;font-size:14px;line-height:1.45;margin-top:12px}
+.rev{border-top:1px solid #e1e7ef;padding:10px 0}
+.rev b{display:block;color:var(--az);font-size:15px;margin-bottom:4px}
+.rev dl{margin:0;font-size:14px}.rev dt{color:var(--cz);font-size:13px;margin-top:6px}.rev dd{margin:0}
+.rev button{width:auto;padding:7px 14px;font-size:14px;background:#fff;color:var(--az);border:1px solid var(--az);border-radius:8px;margin-top:8px}
+.d{font-weight:normal;color:var(--cz);font-size:13px;margin-top:3px}
+.o{color:var(--er)}
+.hide{display:none!important}
+.err{border-color:var(--er)!important;background:#fff6f5}
+.msg{color:var(--er);font-size:13px;margin-top:3px}
+.pes{border:1px dashed #c6cfdb;border-radius:8px;padding:10px;margin-top:10px}
+button{width:100%;padding:16px;border:0;border-radius:10px;background:var(--az);color:#fff;font-size:18px;font-weight:bold;cursor:pointer}
+button:disabled{opacity:.6}
+button.sec{background:#fff;color:var(--az);border:1px solid var(--az)}
+.nav{display:flex;gap:10px;margin:8px 0 30px}.nav button{flex:1}
+.ok{background:#fff;border-top:4px solid var(--az);border-radius:10px;padding:16px;margin-top:12px;box-shadow:0 1px 3px rgba(0,0,0,.08)}
+.ok h2{color:var(--az);margin:0 0 8px;font-size:18px}
+.priv{font-size:13px;color:var(--cz);margin-top:10px;line-height:1.45}
+.prog{font-size:13px;color:var(--az);font-weight:bold;margin:0}
+.barra{height:6px;background:#e1e7ef;border-radius:3px;margin:6px 0 2px;overflow:hidden}
+.barra i{display:block;height:100%;background:var(--am);transition:width .2s}
+</style></head><body>
+<div class="top"><svg width="54" height="54" viewBox="0 0 54 54"><path d="M27 4a23 23 0 1 0 22 30" fill="none" stroke="#00365d" stroke-width="6"/><rect x="15" y="22" width="7" height="14" fill="#f6c416"/><rect x="24" y="16" width="7" height="20" fill="#f6c416"/><rect x="33" y="8" width="7" height="28" fill="#f6c416"/></svg>
+<div class="marca"><b>Elpee</b><small>CONTABILIDADE</small></div></div>
+<div class="w">
+<h1>Abertura de empresa ou entidade</h1>
+<div class="sub">Olá! Este formulário é a coleta dos dados da abertura que você pediu ao escritório.
+São poucas perguntas, uma tela de cada vez.<br><br>
+<b>O que é exigido:</b> as informações que definem o que vai ser aberto — sem elas o ato não pode ser
+redigido. O que você não souber tem a resposta "não sei": ela entra como pendência na nossa lista,
+em vez de ficar parecendo respondida.<br><br>
+<b>Depois que você enviar:</b> conferimos o que o seu caso exige nos órgãos e voltamos pelo e-mail
+e pelo WhatsApp que você informar, com o passo a passo, o prazo e a lista de documentos que precisam
+de assinatura. Se faltar algo, pedimos tudo de uma vez.<br><br>
+Não sabe qual tipo abrir? Tem uma opção para isso, e as perguntas seguintes servem justamente para
+o escritório indicar o caminho. Os campos com <span class="o">*</span> são obrigatórios.</div>
+<div class="prog" id="prog"></div><div class="barra"><i id="barra"></i></div>
+<form id="f" novalidate>
+<fieldset data-etapa="1"><legend>Quem está pedindo</legend><div class="c" data-tipos="MEI,EI,SLU,LTDA,SS,ADV,COOP,ASSOC,FUND,REL,OUT" data-etapa="1"><label for="sol_nome">Nome completo de quem preenche <span class="o">*</span></label><input type="text" name="Nome completo de quem preenche" id="sol_nome" data-req="1"><div class="d">2 palavras ou mais</div></div><div class="c" data-tipos="MEI,EI,SLU,LTDA,SS,ADV,COOP,ASSOC,FUND,REL,OUT" data-etapa="1"><label for="sol_email">E-mail <span class="o">*</span></label><input type="email" name="E-mail" id="sol_email" data-req="1"><div class="d">formato de e-mail; confirmar digitando duas vezes não é necessário</div></div><div class="c" data-tipos="MEI,EI,SLU,LTDA,SS,ADV,COOP,ASSOC,FUND,REL,OUT" data-etapa="1"><label for="sol_cel">Celular com WhatsApp <span class="o">*</span></label><input name="Celular com WhatsApp" id="sol_cel" data-req="1" data-mask="+55 (00) 00000-0000" inputmode="tel"><div class="d">DDD + 9 dígitos, máscara +55</div></div><div class="c" data-tipos="MEI,EI,SLU,LTDA,SS,ADV,COOP,ASSOC,FUND,REL,OUT" data-etapa="1"><label for="sol_papel">Qual é a sua relação com a empresa <span class="o">*</span></label><div class="op" id="sol_papel"><label><input type="radio" name="Qual é a sua relação com a empresa" value="Vou ser o titular ou sócio" data-req="1"> Vou ser o titular ou sócio</label><label><input type="radio" name="Qual é a sua relação com a empresa" value="Sou procurador ou representante"> Sou procurador ou representante</label><label><input type="radio" name="Qual é a sua relação com a empresa" value="Sou contador ou outro responsável"> Sou contador ou outro responsável</label></div></div><div class="c" data-tipos="MEI,EI,SLU,LTDA,SS,ADV,COOP,ASSOC,FUND,REL,OUT" data-etapa="1"><label for="sol_origem">Como conheceu a Elpee</label><select name="Como conheceu a Elpee" id="sol_origem"><option value="">Selecione</option><option>Indicação</option><option>Instagram</option><option>Google</option><option>Site</option><option>Outro</option></select></div></fieldset><fieldset data-etapa="1"><legend>O que você quer abrir</legend><div class="c" data-tipos="MEI,EI,SLU,LTDA,SS,ADV,COOP,ASSOC,FUND,REL,OUT" data-etapa="1"><label for="t_finalidade">O que você quer abrir <span class="o">*</span></label><div class="esc" id="t_finalidade"><label><input type="radio" name="O que você quer abrir" value="Empresa para ganhar dinheiro com uma atividade" data-req="1"> Empresa para ganhar dinheiro com uma atividade<i>Vende produto ou serviço e distribui o resultado entre os donos.</i></label><label><input type="radio" name="O que você quer abrir" value="Entidade sem fins lucrativos (associação, fundação, igreja e similares)" data-req="1"> Entidade sem fins lucrativos (associação, fundação, igreja e similares)<i>Não distribui resultado: o que sobra volta para a atividade dela.</i></label><label><input type="radio" name="O que você quer abrir" value="Cooperativa" data-req="1"> Cooperativa<i>Os donos são as próprias pessoas que trabalham ou negociam nela.</i></label><label><input type="radio" name="O que você quer abrir" value="Ainda não sei" data-req="1"> Ainda não sei<i>Sem problema. As próximas perguntas servem justamente para decidir.</i></label></div></div></fieldset><fieldset data-etapa="1"><legend>Qual é o tipo</legend><div class="c" data-tipos="MEI,EI,SLU,LTDA,SS,ADV,COOP,ASSOC,FUND,REL,OUT" data-etapa="1"><label for="t_tipo_desejado">Se você já sabe o tipo, qual é</label><div class="esc" id="t_tipo_desejado"><label data-fin="LUCRO" data-cod="MEI"><input type="radio" name="Se você já sabe o tipo, qual é" value="MEI"> MEI<i>Só você, sem sócio. Tem teto de faturamento (R$ 81 mil por ano em 2026) e lista fechada de atividades. Registro no Portal do Empreendedor, sem custo. Não serve para quem já é sócio, titular ou administrador de outra empresa.</i></label><label data-fin="LUCRO" data-cod="EI"><input type="radio" name="Se você já sabe o tipo, qual é" value="Empresário individual"> Empresário individual<i>Só você, sem teto de faturamento. Registro na Junta Comercial. A empresa não se separa de você: o seu patrimônio pessoal responde pelas dívidas dela.</i></label><label data-fin="LUCRO" data-cod="SLU"><input type="radio" name="Se você já sabe o tipo, qual é" value="Sociedade limitada unipessoal"> Sociedade limitada unipessoal<i>Só você, mas com a empresa separada do seu patrimônio. Registro na Junta Comercial, sem capital mínimo.</i></label><label data-fin="LUCRO" data-cod="LTDA"><input type="radio" name="Se você já sabe o tipo, qual é" value="Sociedade limitada"> Sociedade limitada<i>Duas pessoas ou mais, com a parte de cada uma escrita no contrato social. Registro na Junta Comercial.</i></label><label data-fin="LUCRO" data-cod="SS"><input type="radio" name="Se você já sabe o tipo, qual é" value="Sociedade simples"> Sociedade simples<i>Para atividade intelectual, científica, literária ou artística. O registro é em cartório, não na Junta Comercial.</i></label><label data-fin="LUCRO" data-cod="ADV"><input type="radio" name="Se você já sabe o tipo, qual é" value="Advocacia"> Advocacia<i>Só para advogados inscritos na OAB, sozinhos ou em sociedade. O registro é na própria OAB.</i></label><label data-fin="COOP" data-cod="COOP"><input type="radio" name="Se você já sabe o tipo, qual é" value="Cooperativa"> Cooperativa<i>Grupo de pessoas que se organiza para trabalhar ou negociar em conjunto, dividindo o resultado. Registro na Junta Comercial.</i></label><label data-fin="SFL" data-cod="ASSOC"><input type="radio" name="Se você já sabe o tipo, qual é" value="Associação"> Associação<i>Pessoas reunidas por uma finalidade que não é lucro. Registro em cartório.</i></label><label data-fin="SFL" data-cod="FUND"><input type="radio" name="Se você já sabe o tipo, qual é" value="Fundação"> Fundação<i>Um patrimônio destinado a uma finalidade. O estatuto passa pelo Ministério Público antes do registro em cartório.</i></label><label data-fin="SFL" data-cod="REL"><input type="radio" name="Se você já sabe o tipo, qual é" value="Organização religiosa"> Organização religiosa<i>Igreja ou organização religiosa. Registro em cartório.</i></label><label data-fin="TODOS" data-cod=""><input type="radio" name="Se você já sabe o tipo, qual é" value="Quero a orientação do escritório"> Quero a orientação do escritório<i>Você responde as perguntas das próximas telas e nós indicamos o tipo na proposta, com o motivo.</i></label></div><div class="d">Escolhendo aqui, as próximas telas já vêm só com o que esse tipo precisa. Em dúvida, marque a última opção.</div></div></fieldset><fieldset data-etapa="1"><legend>Sobre o que você vai abrir</legend><div class="c" data-tipos="MEI,EI,SLU,LTDA,SS,ADV" data-etapa="1"><label for="t_pessoas">Quantas pessoas vão ser donas <span class="o">*</span></label><div class="op" id="t_pessoas"><label><input type="radio" name="Quantas pessoas vão ser donas" value="Só eu" data-req="1"> Só eu</label><label><input type="radio" name="Quantas pessoas vão ser donas" value="Eu e outras pessoas"> Eu e outras pessoas</label></div></div><div class="c" data-tipos="MEI,EI,SLU,LTDA,SS,ADV" data-etapa="1"><label for="t_atividade_tipo">O que a empresa vai fazer <span class="o">*</span></label><div class="op" id="t_atividade_tipo"><label><input type="checkbox" name="O que a empresa vai fazer" value="Vender produtos (comércio)" data-req="1"> Vender produtos (comércio)</label><label><input type="checkbox" name="O que a empresa vai fazer" value="Fabricar (indústria)"> Fabricar (indústria)</label><label><input type="checkbox" name="O que a empresa vai fazer" value="Prestar serviços"> Prestar serviços</label><label><input type="checkbox" name="O que a empresa vai fazer" value="Atividade rural"> Atividade rural</label><label><input type="checkbox" name="O que a empresa vai fazer" value="Outra"> Outra</label></div></div><div class="c" data-tipos="MEI,EI,SLU,LTDA,SS,ADV" data-etapa="1"><label for="t_conselho_sn">A profissão ou atividade exige registro em conselho (OAB, CRM, CRC, CREA e similares) <span class="o">*</span></label><div class="op" id="t_conselho_sn"><label><input type="radio" name="A profissão ou atividade exige registro em conselho (OAB, CRM, CRC, CREA e similares)" value="Sim" data-req="1"> Sim</label><label><input type="radio" name="A profissão ou atividade exige registro em conselho (OAB, CRM, CRC, CREA e similares)" value="Não"> Não</label><label><input type="radio" name="A profissão ou atividade exige registro em conselho (OAB, CRM, CRC, CREA e similares)" value="Não sei"> Não sei</label></div></div><div class="c" data-tipos="MEI,EI,SLU,LTDA,SS,ADV" data-etapa="1" data-show="t_conselho_sn=Sim"><label for="t_conselho">Qual conselho e número de registro</label><input type="text" name="Qual conselho e número de registro" id="t_conselho" data-cond="t_conselho_sn=Sim"><div class="d">nome do conselho + número</div></div><div class="c" data-tipos="MEI,EI,SLU,LTDA,SS,ADV" data-etapa="1"><label for="t_fat_anual">Faturamento anual previsto <span class="o">*</span></label><select name="Faturamento anual previsto" id="t_fat_anual" data-req="1"><option value="">Selecione</option><option>Até R$ 81 mil</option><option>De R$ 81 mil a R$ 360 mil</option><option>De R$ 360 mil a R$ 4,8 milhões</option><option>Acima de R$ 4,8 milhões</option><option>Ainda não sei</option></select><div class="d">Uma estimativa basta. Serve para saber o porte e o regime possível.</div></div><div class="c" data-tipos="MEI,EI,SLU,LTDA,SS,ADV" data-etapa="1" data-show="t_fat_anual=De R$ 81 mil a R$ 360 mil"><label for="t_fat_mei">Quanto você espera faturar por ano, mais ou menos</label><input name="Quanto você espera faturar por ano, mais ou menos" id="t_fat_mei" data-cond="t_fat_anual=De R$ 81 mil a R$ 360 mil" data-mask="moeda" inputmode="numeric"></div><div class="c" data-tipos="MEI,EI,SLU,LTDA,SS,ADV" data-etapa="1"><label for="t_outra_empresa">Você já é sócio, titular ou administrador de outra empresa <span class="o">*</span></label><div class="op" id="t_outra_empresa"><label><input type="radio" name="Você já é sócio, titular ou administrador de outra empresa" value="Sim" data-req="1"> Sim</label><label><input type="radio" name="Você já é sócio, titular ou administrador de outra empresa" value="Não"> Não</label><label><input type="radio" name="Você já é sócio, titular ou administrador de outra empresa" value="Não sei"> Não sei</label></div></div><div class="c" data-tipos="MEI,EI,SLU,LTDA,SS,ADV" data-etapa="1"><label for="t_cargo_publico">Você exerce cargo ou função pública <span class="o">*</span></label><div class="op" id="t_cargo_publico"><label><input type="radio" name="Você exerce cargo ou função pública" value="Sim" data-req="1"> Sim</label><label><input type="radio" name="Você exerce cargo ou função pública" value="Não"> Não</label></div></div><div class="c" data-tipos="MEI,EI,SLU,LTDA,SS,ADV" data-etapa="1"><label for="t_contratar">Pretende contratar empregados <span class="o">*</span></label><div class="op" id="t_contratar"><label><input type="radio" name="Pretende contratar empregados" value="Nenhum" data-req="1"> Nenhum</label><label><input type="radio" name="Pretende contratar empregados" value="1"> 1</label><label><input type="radio" name="Pretende contratar empregados" value="2 ou mais"> 2 ou mais</label></div></div><div class="c" data-tipos="MEI,EI,SLU,LTDA,SS,ADV,COOP,ASSOC,FUND,REL,OUT" data-etapa="1"><label for="t_inicio">Data prevista para começar</label><input type="date" name="Data prevista para começar" id="t_inicio"><div class="d">data futura ou até 30 dias atrás</div></div><div class="c" data-tipos="ASSOC,FUND,REL,OUT" data-etapa="1" data-ja-sabe="ASSOC,FUND,REL" data-show-triagem="t_finalidade=SEMFINS"><label for="t_sfl_tipo">Que tipo de entidade sem fins lucrativos <span class="o">*</span></label><div class="op" id="t_sfl_tipo"><label><input type="radio" name="Que tipo de entidade sem fins lucrativos" value="Associação" data-req="1"> Associação</label><label><input type="radio" name="Que tipo de entidade sem fins lucrativos" value="Fundação"> Fundação</label><label><input type="radio" name="Que tipo de entidade sem fins lucrativos" value="Organização religiosa"> Organização religiosa</label><label><input type="radio" name="Que tipo de entidade sem fins lucrativos" value="Outra (descrever)"> Outra (descrever)</label></div></div><div class="c" data-tipos="ASSOC,FUND,REL,OUT" data-etapa="1" data-show-triagem="t_finalidade=SEMFINS"><label for="t_sfl_finalidade">Qual é a finalidade da entidade <span class="o">*</span></label><textarea name="Qual é a finalidade da entidade" id="t_sfl_finalidade" data-req="1" data-cond="t_finalidade=SEMFINS" rows="3"></textarea><div class="d">mínimo 20 caracteres</div></div><div class="c" data-tipos="ASSOC,REL" data-etapa="1" data-show-triagem="t_finalidade=SEMFINS"><label for="t_sfl_fundadores">Quantas pessoas vão fundar a entidade <span class="o">*</span></label><input type="number" name="Quantas pessoas vão fundar a entidade" id="t_sfl_fundadores" data-req="1" data-cond="t_finalidade=SEMFINS"><div class="d">inteiro maior que 0</div></div><div class="c" data-tipos="FUND" data-etapa="1" data-show-triagem="t_sfl_tipo=Fundacao"><label for="t_fund_instituidor">Quem vai instituir a fundação <span class="o">*</span></label><div class="op" id="t_fund_instituidor"><label><input type="radio" name="Quem vai instituir a fundação" value="Pessoa física em vida (escritura pública)" data-req="1"> Pessoa física em vida (escritura pública)</label><label><input type="radio" name="Quem vai instituir a fundação" value="Pessoa jurídica"> Pessoa jurídica</label><label><input type="radio" name="Quem vai instituir a fundação" value="Por testamento"> Por testamento</label></div></div><div class="c" data-tipos="FUND" data-etapa="1" data-show-triagem="t_sfl_tipo=Fundacao"><label for="t_fund_bens">Bens que serão destinados à fundação (descrição e valor estimado) <span class="o">*</span></label><textarea name="Bens que serão destinados à fundação (descrição e valor estimado)" id="t_fund_bens" data-req="1" data-cond="t_sfl_tipo=Fundacao" rows="3"></textarea></div><div class="c" data-tipos="COOP" data-etapa="1" data-show-triagem="t_finalidade=COOPERATIVA"><label for="t_coop_trabalho">É cooperativa de trabalho <span class="o">*</span></label><div class="op" id="t_coop_trabalho"><label><input type="radio" name="É cooperativa de trabalho" value="Sim" data-req="1"> Sim</label><label><input type="radio" name="É cooperativa de trabalho" value="Não"> Não</label></div></div><div class="c" data-tipos="COOP" data-etapa="1" data-show-triagem="t_finalidade=COOPERATIVA"><label for="t_coop_ramo">Ramo e atividade da cooperativa <span class="o">*</span></label><textarea name="Ramo e atividade da cooperativa" id="t_coop_ramo" data-req="1" data-cond="t_finalidade=COOPERATIVA" rows="3"></textarea><div class="d">mínimo 20 caracteres</div></div><div class="c" data-tipos="COOP" data-etapa="1" data-show-triagem="t_finalidade=COOPERATIVA"><label for="t_coop_cooperados">Quantas pessoas vão fundar <span class="o">*</span></label><input type="number" name="Quantas pessoas vão fundar" id="t_coop_cooperados" data-req="1" data-cond="t_finalidade=COOPERATIVA"><div class="d">se cooperativa de trabalho</div></div></fieldset><fieldset data-etapa="1"><legend>Nome da empresa ou entidade</legend><div class="c" data-tipos="EI,SLU,LTDA,SS,ADV,COOP,ASSOC,FUND,REL" data-etapa="1"><label for="n_op1">Nome desejado, opção 1 <span class="o">*</span></label><input type="text" name="Nome desejado, opção 1" id="n_op1" data-req="1"><div class="d">sem / * -; o escritório ajusta a partícula final</div></div><div class="c" data-tipos="EI,SLU,LTDA,SS,ADV,COOP,ASSOC,FUND,REL" data-etapa="1"><label for="n_op2">Nome desejado, opção 2 <span class="o">*</span></label><input type="text" name="Nome desejado, opção 2" id="n_op2" data-req="1"><div class="d">igual à opção 1; vale como reserva se a primeira colidir</div></div><div class="c" data-tipos="EI,SLU,LTDA,SS,ADV,COOP,ASSOC,FUND,REL" data-etapa="1"><label for="n_op3">Nome desejado, opção 3</label><input type="text" name="Nome desejado, opção 3" id="n_op3"><div class="d">igual à opção 1</div></div><div class="c" data-tipos="MEI,EI,SLU,LTDA,SS" data-etapa="1"><label for="n_fantasia">Nome fantasia (como o cliente vai conhecer)</label><input type="text" name="Nome fantasia (como o cliente vai conhecer)" id="n_fantasia"><div class="d">sem caracteres especiais</div></div><div class="c" data-tipos="ASSOC,FUND,REL" data-etapa="1"><label for="n_sigla">Sigla da entidade</label><input type="text" name="Sigla da entidade" id="n_sigla"><div class="d">até 12 caracteres</div></div></fieldset><fieldset data-etapa="1"><legend>Endereço e local de funcionamento</legend><div class="c" data-tipos="MEI,EI,SLU,LTDA,SS,ADV,COOP,ASSOC,FUND,REL,OUT" data-etapa="1"><label for="e_tipo_local">Onde a atividade vai acontecer <span class="o">*</span></label><div class="op" id="e_tipo_local"><label><input type="radio" name="Onde a atividade vai acontecer" value="Imóvel comercial" data-req="1"> Imóvel comercial</label><label><input type="radio" name="Onde a atividade vai acontecer" value="Em casa (endereço residencial)"> Em casa (endereço residencial)</label><label><input type="radio" name="Onde a atividade vai acontecer" value="Coworking ou endereço compartilhado"> Coworking ou endereço compartilhado</label><label><input type="radio" name="Onde a atividade vai acontecer" value="Não terei local, só o endereço fiscal"> Não terei local, só o endereço fiscal</label><label><input type="radio" name="Onde a atividade vai acontecer" value="Ainda não tenho endereço"> Ainda não tenho endereço</label></div></div><div class="c aviso hide" data-etapa="1" data-tipos="MEI,EI,SLU,LTDA,SS,ADV,COOP,ASSOC,FUND,REL,OUT" data-sem-endereco="1">Sem endereço definido não dá para concluir a abertura: o órgão de registro exige um. Siga assim mesmo — o escritório ajuda a resolver isso junto com você (endereço fiscal, coworking ou o seu próprio) e pede os dados depois.</div><div class="c" data-tipos="MEI,EI,SLU,LTDA,SS,ADV,COOP,ASSOC,FUND,REL,OUT" data-etapa="1" data-end="1"><label for="e_cep">CEP <span class="o">*</span></label><input name="CEP" id="e_cep" data-req="1" data-mask="00000-000" data-cep="1" inputmode="numeric"><div class="d">preenche logradouro, bairro, cidade e UF</div></div><div class="c" data-tipos="MEI,EI,SLU,LTDA,SS,ADV,COOP,ASSOC,FUND,REL,OUT" data-etapa="1" data-end="1"><label for="e_logradouro">Logradouro <span class="o">*</span></label><input type="text" name="Logradouro" id="e_logradouro" data-req="1"></div><div class="c" data-tipos="MEI,EI,SLU,LTDA,SS,ADV,COOP,ASSOC,FUND,REL,OUT" data-etapa="1" data-end="1"><label for="e_numero">Número <span class="o">*</span></label><input type="text" name="Número" id="e_numero" data-req="1"><div class="d">número ou S/N</div></div><div class="c" data-tipos="MEI,EI,SLU,LTDA,SS,ADV,COOP,ASSOC,FUND,REL,OUT" data-etapa="1" data-end="1"><label for="e_compl">Complemento</label><input type="text" name="Complemento" id="e_compl"></div><div class="c" data-tipos="MEI,EI,SLU,LTDA,SS,ADV,COOP,ASSOC,FUND,REL,OUT" data-etapa="1" data-end="1"><label for="e_bairro">Bairro <span class="o">*</span></label><input type="text" name="Bairro" id="e_bairro" data-req="1"></div><div class="c" data-tipos="MEI,EI,SLU,LTDA,SS,ADV,COOP,ASSOC,FUND,REL,OUT" data-etapa="1" data-end="1"><label for="e_cidade">Cidade <span class="o">*</span></label><input type="text" name="Cidade" id="e_cidade" data-req="1"></div><div class="c" data-tipos="MEI,EI,SLU,LTDA,SS,ADV,COOP,ASSOC,FUND,REL,OUT" data-etapa="1" data-end="1"><label for="e_uf">UF <span class="o">*</span></label><select name="UF" id="e_uf" data-req="1"><option value="">Selecione</option><option>AC</option><option>AL</option><option>AP</option><option>AM</option><option>BA</option><option>CE</option><option>DF</option><option>ES</option><option>GO</option><option>MA</option><option>MT</option><option>MS</option><option>MG</option><option>PA</option><option>PB</option><option>PR</option><option>PE</option><option>PI</option><option>RJ</option><option>RN</option><option>RS</option><option>RO</option><option>RR</option><option>SC</option><option>SP</option><option>SE</option><option>TO</option></select></div><div class="c" data-tipos="MEI,EI,SLU,LTDA,SS,ADV,COOP,ASSOC,FUND,REL,OUT" data-etapa="1" data-end="1" data-show="e_tipo_local=!Sem local"><label for="e_vinculo">O imóvel é</label><div class="op" id="e_vinculo"><label><input type="radio" name="O imóvel é" value="Próprio"> Próprio</label><label><input type="radio" name="O imóvel é" value="Alugado"> Alugado</label><label><input type="radio" name="O imóvel é" value="Cedido"> Cedido</label></div></div><div class="c" data-tipos="MEI,EI,SLU,LTDA,SS,ADV,COOP,ASSOC,FUND,REL,OUT" data-etapa="1" data-show="e_tipo_local=!Ainda não tenho endereço"><label for="e_iptu_tem">O imóvel tem IPTU (inscrição imobiliária)?</label><div class="op" id="e_iptu_tem"><label><input type="radio" name="O imóvel tem IPTU (inscrição imobiliária)?" value="Tenho o número"> Tenho o número</label><label><input type="radio" name="O imóvel tem IPTU (inscrição imobiliária)?" value="O imóvel não tem IPTU"> O imóvel não tem IPTU</label><label><input type="radio" name="O imóvel tem IPTU (inscrição imobiliária)?" value="Não tenho em mãos agora"> Não tenho em mãos agora</label><label><input type="radio" name="O imóvel tem IPTU (inscrição imobiliária)?" value="Não sei"> Não sei</label></div></div><div class="c" data-tipos="MEI,EI,SLU,LTDA,SS,ADV,COOP,ASSOC,FUND,REL,OUT" data-etapa="1" data-end="1" data-show="e_iptu_tem=Tenho o número"><label for="e_iptu">Número do IPTU ou inscrição imobiliária do imóvel</label><input type="text" name="Número do IPTU ou inscrição imobiliária do imóvel" id="e_iptu" data-cond="e_iptu_tem=Tenho o número"><div class="d">Aparece quando e_iptu_tem = Tenho o número. Aceitar como está no carnê, com ou sem pontos</div></div><div class="c" data-tipos="MEI,EI,SLU,LTDA,SS,ADV,COOP,ASSOC,FUND,REL,OUT" data-etapa="1" data-show="e_iptu_tem=!Tenho o número"><label for="e_iptu_referencia">Como localizar o imóvel (rua e número mais próximo, ponto de referência, nome do loteamento, vila ou condomínio, ou o IPTU de um vizinho)</label><input type="text" name="Como localizar o imóvel (rua e número mais próximo, ponto de referência, nome do loteamento, vila ou condomínio, ou o IPTU de um vizinho)" id="e_iptu_referencia" data-cond="e_iptu_tem=!Tenho o número"></div><div class="c" data-tipos="MEI,EI,SLU,LTDA,SS,ADV,COOP,ASSOC,FUND,REL,OUT" data-etapa="1" data-end="1" data-show="e_tipo_local=!Sem local"><label for="e_area">Área do imóvel em m²</label><input type="number" name="Área do imóvel em m²" id="e_area" data-cond="e_tipo_local=!Sem local"></div><div class="c" data-tipos="MEI,EI,SLU,LTDA,SS,ADV,COOP,ASSOC,FUND,REL,OUT" data-etapa="1"><label for="e_forma_atuacao">Forma de atuação <span class="o">*</span></label><div class="op" id="e_forma_atuacao"><label><input type="checkbox" name="Forma de atuação" value="Estabelecimento fixo" data-req="1"> Estabelecimento fixo</label><label><input type="checkbox" name="Forma de atuação" value="Internet"> Internet</label><label><input type="checkbox" name="Forma de atuação" value="No local do cliente ou de terceiros"> No local do cliente ou de terceiros</label><label><input type="checkbox" name="Forma de atuação" value="Outra"> Outra</label></div></div><div class="c" data-tipos="MEI,EI,SLU,LTDA,SS,ADV,COOP,ASSOC,FUND,REL,OUT" data-etapa="1"><label for="e_licencas">A atividade envolve algum destes itens</label><div class="op" id="e_licencas"><label><input type="checkbox" name="A atividade envolve algum destes itens" value="Alimentos e bebidas"> Alimentos e bebidas</label><label><input type="checkbox" name="A atividade envolve algum destes itens" value="Saúde ou estética"> Saúde ou estética</label><label><input type="checkbox" name="A atividade envolve algum destes itens" value="Educação"> Educação</label><label><input type="checkbox" name="A atividade envolve algum destes itens" value="Eventos"> Eventos</label><label><input type="checkbox" name="A atividade envolve algum destes itens" value="Produto controlado ou inflamável"> Produto controlado ou inflamável</label><label><input type="checkbox" name="A atividade envolve algum destes itens" value="Obra"> Obra</label><label><input type="checkbox" name="A atividade envolve algum destes itens" value="Nenhum"> Nenhum</label></div></div></fieldset><fieldset data-etapa="1"><legend>Atividade</legend><div class="c" data-tipos="MEI,EI,SLU,LTDA,SS,ADV,COOP,ASSOC,FUND,REL,OUT" data-etapa="1"><label for="a_descricao">Descreva o que a empresa ou entidade vai fazer, com suas palavras <span class="o">*</span></label><textarea name="Descreva o que a empresa ou entidade vai fazer, com suas palavras" id="a_descricao" data-req="1" rows="3"></textarea><div class="d">mínimo 20 caracteres</div></div><div class="c" data-tipos="MEI,EI,SLU,LTDA,SS,ADV,COOP,ASSOC,FUND,REL,OUT" data-etapa="1"><label for="a_cnae">Se já souber, os códigos de atividade (CNAE)</label><input type="text" name="Se já souber, os códigos de atividade (CNAE)" id="a_cnae"><div class="d">Se não souber, deixe em branco. O escritório define os códigos a partir do que você descreveu acima.</div></div><div class="c" data-tipos="MEI,EI,SLU,LTDA,SS,ADV,COOP,ASSOC,FUND,REL,OUT" data-etapa="1"><label for="a_fat_mensal">Faturamento mensal esperado</label><input name="Faturamento mensal esperado" id="a_fat_mensal" data-mask="moeda" inputmode="numeric"><div class="d">valor em reais</div></div><div class="c" data-tipos="MEI,EI,SLU,LTDA,SS,ADV,COOP,ASSOC,FUND,REL,OUT" data-etapa="1"><label for="a_emite_nf">Para quem vai emitir nota</label><div class="op" id="a_emite_nf"><label><input type="radio" name="Para quem vai emitir nota" value="Pessoas físicas"> Pessoas físicas</label><label><input type="radio" name="Para quem vai emitir nota" value="Empresas"> Empresas</label><label><input type="radio" name="Para quem vai emitir nota" value="Os dois"> Os dois</label></div></div></fieldset><fieldset data-etapa="1"><legend>Capital e regime (intenção)</legend><div class="c" data-tipos="MEI,EI,SLU,LTDA,SS,COOP" data-etapa="1"><label for="c_capital">Capital social pretendido <span class="o">*</span></label><input name="Capital social pretendido" id="c_capital" data-req="1" data-mask="moeda" inputmode="numeric"><div class="d">É o valor que os donos declaram colocar na empresa. Não precisa estar na conta hoje e pode ser integralizado depois, no prazo do contrato. Na dúvida, escreva um valor baixo e redondo: dá para alterar depois.</div></div><div class="c" data-tipos="EI,SLU,LTDA,SS,ADV,COOP" data-etapa="1"><label for="c_regime_pref">Regime de tributação que você imagina</label><select name="Regime de tributação que você imagina" id="c_regime_pref"><option value="">Selecione</option><option>Simples Nacional</option><option>Lucro presumido</option><option>Lucro real</option><option>Não sei</option></select><div class="d">É só a sua preferência. A escolha final sai da análise do escritório, com simulação, e vai junto com a proposta.</div></div></fieldset><fieldset data-etapa="1"><legend>Serviços desejados e consentimento</legend><div class="c" data-tipos="MEI,EI,SLU,LTDA,SS,ADV,COOP,ASSOC,FUND,REL,OUT" data-etapa="1"><label for="sv_escopo">O que você quer da Elpee <span class="o">*</span></label><div class="op" id="sv_escopo"><label><input type="checkbox" name="O que você quer da Elpee" value="Só a abertura" data-req="1"> Só a abertura</label><label><input type="checkbox" name="O que você quer da Elpee" value="Contabilidade mensal"> Contabilidade mensal</label><label><input type="checkbox" name="O que você quer da Elpee" value="Folha de pagamento"> Folha de pagamento</label><label><input type="checkbox" name="O que você quer da Elpee" value="Emissão de notas"> Emissão de notas</label><label><input type="checkbox" name="O que você quer da Elpee" value="Certificado digital"> Certificado digital</label><label><input type="checkbox" name="O que você quer da Elpee" value="Alvará e licenças"> Alvará e licenças</label></div></div><div class="c" data-tipos="MEI,EI,SLU,LTDA,SS,ADV" data-etapa="1"><label for="sv_funcionarios">Quantos empregados no começo</label><input type="number" name="Quantos empregados no começo" id="sv_funcionarios"><div class="d">inteiro</div></div><div class="c" data-tipos="MEI,EI,SLU,LTDA,SS,ADV,COOP,ASSOC,FUND,REL,OUT" data-etapa="1"><label for="sv_obs">Algo que a gente precise saber</label><textarea name="Algo que a gente precise saber" id="sv_obs" rows="3"></textarea></div><div class="c" data-tipos="MEI,EI,SLU,LTDA,SS,ADV,COOP,ASSOC,FUND,REL,OUT" data-etapa="1"><label for="lgpd_aceite">Autorizo o uso destes dados para analisar o pedido e preparar a abertura <span class="o">*</span></label><div class="op" id="lgpd_aceite"><label><input type="checkbox" name="Autorizo o uso destes dados para analisar o pedido e preparar a abertura" value="Sim" data-req="1"> Sim</label></div></div><div class="c" data-tipos="MEI,EI,SLU,LTDA,SS,ADV,COOP,ASSOC,FUND,REL,OUT" data-etapa="1"><label for="mkt_aceite">Aceito receber novidades da Elpee</label><div class="op" id="mkt_aceite"><label><input type="checkbox" name="Aceito receber novidades da Elpee" value="Sim"> Sim</label></div></div></fieldset>
+<fieldset data-etapa="1" class="rev-fs"><legend>Confira antes de enviar</legend>
+<div class="c"><div class="d">Veja se está tudo certo. Para corrigir, toque em Editar: você volta
+para aquela tela e depois segue daqui.</div><div id="resumo1"></div></div>
+<div class="c"><div class="aviso"><b>O que ainda não foi pedido aqui.</b><br>
+Esta primeira parte serve para a Elpee analisar o seu caso. Os <b>dados pessoais do titular ou dos
+sócios</b> (CPF, documento de identidade, endereço residencial) e os <b>documentos para anexar</b>
+são pedidos na segunda parte, num link que mandamos para você junto com a resposta — nada disso
+aparece neste resumo porque ainda não foi a hora.</div></div></fieldset>
+<fieldset data-etapa="2"><legend>Detalhes do ato constitutivo</legend><div class="c" data-tipos="EI,SLU,LTDA,SS,COOP" data-etapa="2"><label for="c_integral">Como o capital será pago <span class="o">*</span></label><div class="op" id="c_integral"><label><input type="radio" name="Como o capital será pago" value="Em dinheiro" data-req="1"> Em dinheiro</label><label><input type="radio" name="Como o capital será pago" value="Com bens"> Com bens</label><label><input type="radio" name="Como o capital será pago" value="Misto"> Misto</label></div><div class="d">se bens, listar</div></div><div class="c" data-tipos="EI,SLU,LTDA,SS,COOP" data-etapa="2" data-show="c_integral=PREENCHIDO"><label for="c_prazo_integral">Prazo de integralização</label><input type="text" name="Prazo de integralização" id="c_prazo_integral" data-cond="c_integral=PREENCHIDO"><div class="d">data ou &#x27;à vista&#x27;</div></div><div class="c" data-tipos="SLU,LTDA,SS,ADV" data-etapa="2"><label for="c_admin_tipo">Quem vai administrar <span class="o">*</span></label><div class="op" id="c_admin_tipo"><label><input type="radio" name="Quem vai administrar" value="Um sócio" data-req="1"> Um sócio</label><label><input type="radio" name="Quem vai administrar" value="Mais de um sócio"> Mais de um sócio</label><label><input type="radio" name="Quem vai administrar" value="Pessoa que não é sócia"> Pessoa que não é sócia</label></div></div><div class="c" data-tipos="SLU,LTDA,SS,ADV,COOP,ASSOC,FUND,REL" data-etapa="2"><label for="c_duracao">Prazo de duração <span class="o">*</span></label><div class="op" id="c_duracao"><label><input type="radio" name="Prazo de duração" value="Indeterminado" data-req="1"> Indeterminado</label><label><input type="radio" name="Prazo de duração" value="Determinado (informar data)"> Determinado (informar data)</label></div></div><div class="c" data-tipos="SLU,LTDA,SS,ADV,COOP" data-etapa="2"><label for="c_exercicio">Fim do exercício social</label><input type="date" name="Fim do exercício social" id="c_exercicio"><div class="d">padrão 31/12; só preencher se diferente do ano civil</div></div><div class="c" data-tipos="SLU,LTDA,SS,ADV,COOP" data-etapa="2"><label for="c_foro">Foro (cidade) <span class="o">*</span></label><input type="text" name="Foro (cidade)" id="c_foro" data-req="1"><div class="d">cidade e UF</div></div><div class="c" data-tipos="ASSOC,FUND,REL" data-etapa="2"><label for="s_orgaos">Órgãos da entidade <span class="o">*</span></label><div class="op" id="s_orgaos"><label><input type="checkbox" name="Órgãos da entidade" value="Diretoria" data-req="1"> Diretoria</label><label><input type="checkbox" name="Órgãos da entidade" value="Conselho fiscal"> Conselho fiscal</label><label><input type="checkbox" name="Órgãos da entidade" value="Conselho deliberativo"> Conselho deliberativo</label><label><input type="checkbox" name="Órgãos da entidade" value="Outro"> Outro</label></div></div><div class="c" data-tipos="ASSOC,FUND,REL" data-etapa="2"><label for="s_mandato">Duração do mandato da diretoria (meses) <span class="o">*</span></label><input type="number" name="Duração do mandato da diretoria (meses)" id="s_mandato" data-req="1"><div class="d">inteiro</div></div><div class="c" data-tipos="COOP" data-etapa="2"><label for="s_quota">Valor da quota-parte e mínimo por cooperado <span class="o">*</span></label><input name="Valor da quota-parte e mínimo por cooperado" id="s_quota" data-req="1" data-mask="moeda" inputmode="numeric"><div class="d">valor em reais</div></div></fieldset><fieldset data-etapa="2"><legend>Pessoas (uma ficha por pessoa)</legend><div class="d">Uma ficha por pessoa. Informe quantas e preencha cada uma.</div><label for="qpes">Quantas pessoas</label><input type="number" id="qpes" min="1" max="20" value="1"><div id="pessoas"></div></fieldset><fieldset data-etapa="2"><legend>Documentos da entidade</legend><div class="c" data-tipos="MEI,EI,SLU,LTDA,SS,ADV,COOP,ASSOC,FUND,REL,OUT" data-etapa="2" data-show="e_iptu_tem=IPTU_PEDE_ANEXO"><label for="d_iptu">IPTU ou documento com a inscrição imobiliária da sede</label><input type="file" name="IPTU ou documento com a inscrição imobiliária da sede" id="d_iptu" data-cond="e_iptu_tem=IPTU_PEDE_ANEXO" data-file="IPTU ou documento com a inscrição imobiliária da sede" accept=".pdf,.jpg,.jpeg,.png"><div class="d">Pedir quando e_iptu_tem = Tenho o número ou Não tenho em mãos agora; quando o imóvel não tem IPTU, não pedir...</div></div><div class="c" data-tipos="MEI,EI,SLU,LTDA,SS,ADV,COOP,ASSOC,FUND,REL,OUT" data-etapa="2"><label for="d_end_comercial">Comprovante de endereço comercial, se diferente do residencial</label><input type="file" name="Comprovante de endereço comercial, se diferente do residencial" id="d_end_comercial" data-file="Comprovante de endereço comercial, se diferente do residencial" accept=".pdf,.jpg,.jpeg,.png"></div><div class="c" data-tipos="EI,SLU,LTDA,SS,ADV,COOP,ASSOC,FUND,REL" data-etapa="2"><label for="d_minuta">Contrato, estatuto ou ata que já exista</label><input type="file" name="Contrato, estatuto ou ata que já exista" id="d_minuta" data-file="Contrato, estatuto ou ata que já exista" accept=".pdf,.jpg,.jpeg,.png"></div><div class="c" data-tipos="FUND" data-etapa="2"><label for="d_dotacao">Escritura pública de dotação ou relação dos bens <span class="o">*</span></label><input type="file" name="Escritura pública de dotação ou relação dos bens" id="d_dotacao" data-req="1" data-file="Escritura pública de dotação ou relação dos bens" accept=".pdf,.jpg,.jpeg,.png"></div><div class="c" data-tipos="MEI,EI,SLU,LTDA,SS,ADV,COOP,ASSOC,FUND,REL,OUT" data-etapa="2"><label for="d_outros">Outros documentos</label><input type="file" name="Outros documentos" id="d_outros" data-file="Outros documentos" accept=".pdf,.jpg,.jpeg,.png"></div></fieldset>
+<fieldset data-etapa="2" class="rev-fs"><legend>Confira antes de enviar</legend>
+<div class="c"><div class="d">Veja se está tudo certo. Para corrigir, toque em Editar.</div>
+<div id="resumo2"></div></div></fieldset>
+<div class="aviso hide" id="meipainel"></div>
+<div class="nav">
+<button type="button" class="sec hide" id="bv">Voltar</button>
+<button type="button" id="ba">Avançar</button>
+<button type="submit" id="bt" class="hide">Enviar</button>
+</div>
+<div class="priv" id="priv"><b>Quem recebe:</b> a Elpee Contabilidade, escritório responsável pela abertura.
+<b>Para quê:</b> analisar o pedido, redigir e registrar o ato e falar com você sobre ele.
+<b>Onde fica guardado:</b> este formulário funciona em serviços do Google. As suas respostas vão para uma
+planilha e os arquivos que você anexa ficam em uma pasta do Google Drive, as duas em uma conta da Elpee.
+Ou seja: o Google guarda esses dados em nome da Elpee, como fornecedor de tecnologia, e aplica as regras
+de segurança dele. Quem decide o que fazer com os dados é a Elpee.
+<b>Com quem mais:</b> com os órgãos que a abertura exige — Junta Comercial ou cartório de registro,
+Receita Federal, prefeitura e Secretaria da Fazenda — e com o contador responsável pelo seu atendimento.
+Fora disso e do fornecedor de tecnologia acima, não entregamos os seus dados a mais ninguém, e nada é
+usado para propaganda nem vendido.
+<b>Por quanto tempo:</b> enquanto durar o atendimento e por até 5 anos depois, prazo em que os documentos
+do ato ainda podem ser exigidos; pedido que não vira contrato é apagado em 12 meses, e cadastro começado
+e não concluído, em 30 dias.
+<b>Chamada externa:</b> o campo de CEP consulta o serviço público ViaCEP para preencher o endereço.
+Para pedir cópia, correção ou exclusão dos seus dados, basta responder o nosso e-mail.</div>
+</form>
+<div id="res"></div></div>
+<script>
+var ENDPOINT='https://script.google.com/macros/s/AKfycbzsDEywEr1K4DsFccxC_ZucxoGcPrgHqzSwPQ1koRyFqdqUFkktplWz4-63RJ9wCEiRaw/exec';   // Apps Script da conta contato@, implantado em 17/11/2026 16h55
+var TIPOS={"MEI": "MEI", "EI": "Empresário individual", "SLU": "Sociedade limitada unipessoal (SLU)", "LTDA": "Sociedade limitada (Ltda., ME/EPP)", "SS": "Sociedade simples", "ADV": "Advocacia (sociedade ou individual)", "COOP": "Cooperativa", "ASSOC": "Associação", "FUND": "Fundação privada", "REL": "Organização religiosa", "OUT": "Outro (triagem manual)"};
+var CNAE_MEI='0121-1/01,0159-8/01,0159-8/02,0161-0/02,0161-0/03,0162-8/02,0321-3/04,0322-1/04,0892-4/01,1013-9/01,1031-7/00,1032-5/99,1033-3/01,1033-3/02,1052-0/00,1061-9/02,1063-5/00,1064-3/00,1065-1/01,1069-4/00,1071-6/00,1091-1/01,1091-1/02,1092-9/00,1093-7/01,1093-7/02,1094-5/00,1095-3/00,1096-1/00,1099-6/01,1099-6/04,1099-6/05,1099-6/99,1122-4/03,1220-4/99,1311-1/00,1312-0/00,1321-9/00,1322-7/00,1340-5/01,1340-5/99,1351-1/00,1352-9/00,1353-7/00,1359-6/00,1411-8/01,1411-8/02,1412-6/01,1412-6/02,1412-6/03,1413-4/03,1414-2/00,1421-5/00,1422-3/00,1510-6/00,1521-1/00,1529-7/00,1531-9/01,1531-9/02,1539-4/00,1540-8/00,1622-6/99,1623-4/00,1629-3/01,1629-3/02,1721-4/00,1731-1/00,1732-0/00,1742-7/99,1749-4/00,1813-0/01,1813-0/99,1821-1/00,1822-9/01,2219-6/00,2229-3/99,2319-2/00,2330-3/99,2342-7/02,2349-4/99,2391-5/01,2391-5/03,2399-1/01,2512-8/00,2532-2/01,2539-0/01,2539-0/02,2541-1/00,2542-0/00,2543-8/00,2599-3/01,2599-3/99,2740-6/02,2950-6/00,3101-2/00,3102-1/00,3103-9/00,3104-7/00,3211-6/01,3211-6/02,3211-6/03,3212-4/00,3220-5/00,3230-2/00,3240-0/99,3291-4/00,3292-2/02,3299-0/01,3299-0/02,3299-0/03,3299-0/04,3299-0/05,3299-0/06,3299-0/99,3311-2/00,3313-9/01,3313-9/02,3313-9/99,3314-7/01,3314-7/02,3314-7/06,3314-7/07,3314-7/09,3314-7/10,3314-7/11,3314-7/12,3314-7/19,3314-7/20,3314-7/99,3317-1/02,3319-8/00,3321-0/00,3329-5/01,3600-6/02,3702-9/00,3811-4/00,3831-9/01,3831-9/99,3832-7/00,3839-4/99,4321-5/00,4322-3/01,4322-3/02,4322-3/03,4329-1/01,4329-1/02,4329-1/03,4329-1/04,4329-1/05,4330-4/02,4330-4/03,4330-4/04,4330-4/05,4330-4/99,4399-1/03,4399-1/05,4399-1/99,4520-0/01,4520-0/02,4520-0/03,4520-0/05,4520-0/06,4520-0/07,4520-0/08,4530-7/03,4530-7/04,4530-7/05,4541-2/06,4541-2/07,4543-9/00,4712-1/00,4721-1/02,4721-1/03,4721-1/04,4722-9/01,4722-9/02,4723-7/00,4724-5/00,4729-6/01,4729-6/99,4732-6/00,4741-5/00,4742-3/00,4743-1/00,4744-0/01,4744-0/02,4744-0/03,4744-0/04,4744-0/99,4751-2/01,4751-2/02,4752-1/00,4753-9/00,4754-7/01,4754-7/02,4754-7/03,4755-5/01,4755-5/02,4755-5/03,4756-3/00,4757-1/00,4759-8/01,4759-8/99,4761-0/01,4761-0/02,4761-0/03,4762-8/00,4763-6/01,4763-6/02,4763-6/03,4763-6/04,4772-5/00,4773-3/00,4774-1/00,4781-4/00,4782-2/01,4782-2/02,4783-1/01,4783-1/02,4785-7/01,4785-7/99,4789-0/01,4789-0/02,4789-0/03,4789-0/04,4789-0/05,4789-0/07,4789-0/08,4789-0/99,4923-0/01,4923-0/02,4924-8/00,4929-9/01,4929-9/02,4929-9/03,4930-2/01,4930-2/02,4930-2/03,4930-2/04,5011-4/01,5021-1/01,5091-2/01,5091-2/02,5099-8/01,5099-8/99,5211-7/02,5212-5/00,5223-1/00,5229-0/02,5310-5/02,5320-2/01,5320-2/02,5590-6/01,5590-6/02,5590-6/03,5590-6/99,5611-2/01,5611-2/03,5611-2/04,5611-2/05,5612-1/00,5620-1/01,5620-1/02,5620-1/03,5620-1/04,5811-5/00,5812-3/01,5812-3/02,5813-1/00,5819-1/00,5912-0/01,5912-0/99,6190-6/99,6399-2/00,7319-0/02,7319-0/99,7420-0/01,7420-0/02,7420-0/03,7420-0/04,7490-1/02,7719-5/99,7721-7/00,7722-5/00,7723-3/00,7729-2/01,7729-2/02,7729-2/03,7729-2/99,7731-4/00,7732-2/01,7732-2/02,7733-1/00,7739-0/02,7739-0/03,7739-0/99,7911-2/00,7912-1/00,7990-2/00,8011-1/02,8020-0/02,8129-0/00,8130-3/00,8219-9/01,8219-9/99,8230-0/01,8230-0/02,8291-1/00,8292-0/00,8299-7/03,8299-7/07,8299-7/99,8592-9/02,8592-9/03,8592-9/99,8593-7/00,8599-6/03,8599-6/04,8599-6/05,8599-6/99,8712-3/00,9001-9/01,9001-9/02,9001-9/06,9002-7/02,9329-8/03,9329-8/04,9329-8/99,9511-8/00,9512-6/00,9521-5/00,9529-1/01,9529-1/02,9529-1/03,9529-1/04,9529-1/05,9529-1/06,9529-1/99,9601-7/01,9601-7/02,9601-7/03,9602-5/01,9602-5/02,9603-3/04,9609-2/02,9609-2/06,9609-2/07,9609-2/08,9609-2/99,9700-5/00'.split(',');
+function anoMEI(d){
+ var p=String(d||'').split('-'); var a=parseInt(p[0],10);
+ return a&&a>2000?a:(new Date()).getFullYear();
+}
+function tetoAnoMEI(a){ return a>=2028?140000:(a==2027?110000:81000); }
+function tetoMesMEI(a){ return a>=2028?11666.67:(a==2027?9166.67:6750); }
+function empMEI(a){ return a>=2027?2:1; }
+
+function mesesMEI(d){
+ var p=String(d||'').split('-'); if(p.length<2)return 12;
+ var m=parseInt(p[1],10); if(!m)return 12;
+ return Math.max(1,13-m);
+}
+function tetoMEI(d){ var a=anoMEI(d); return mesesMEI(d)<12?tetoMesMEI(a)*mesesMEI(d):tetoAnoMEI(a); }
+function meiCabeFat(){
+ var d=byId('t_inicio')||'', teto=tetoMEI(d),
+     estim=num(byId('t_fat_mei')||'0'), mens=num(byId('a_fat_mensal')||'0'),
+     anual=estim>0?estim:(mens>0?mens*mesesMEI(d):0);
+ if(anual>0)return anual<=teto;
+ return faixaFat(byId('t_fat_anual'))<=tetoAnoMEI(anoMEI(d));
+}
+
+function impedeMEI(){
+ var q=byId('t_pessoas')||'', outra=byId('t_outra_empresa')||'', consSn=byId('t_conselho_sn')||'',
+     emp=parseInt(dig(byId('t_contratar'))||'0',10), ini=byId('t_inicio')||'',
+     fx=faixaFat(byId('t_fat_anual')), mens=num(byId('a_fat_mensal')||'0'),
+     estim=num(byId('t_fat_mei')||'0'),
+     cnae=(byId('a_cnae')||''), com=/outras|s[óo]cio/i.test(q);
+ var ano=anoMEI(ini), tetoAno=tetoAnoMEI(ano), tetoMes=tetoMesMEI(ano),
+     mm=mesesMEI(ini), teto=tetoMEI(ini), maxE=empMEI(ano);
+ var m=[], ped=[], sug='', nota='';
+ if(com){ m.push('o MEI é só para quem vai ser dono sozinho — não existe MEI com sócio'); sug='sociedade limitada (LTDA)'; }
+ if(outra=='Sim')m.push('quem já é sócio, titular ou administrador de outra empresa não pode ser MEI');
+ var respEmp=byId('t_contratar')||'', aberto=/ou mais/i.test(respEmp);
+ var qtd=parseInt(dig(byId('sv_funcionarios')||'')||'',10);
+ var temQtd=!isNaN(qtd)&&qtd>0, nEmp=temQtd?qtd:emp;
+ if(nEmp>maxE)m.push('começando em '+ano+', o MEI pode ter até '+maxE+' '+(maxE>1?'empregados':'empregado')+
+   ', e você respondeu '+(temQtd?('que começa com '+qtd):'que pretende contratar mais'));
+ else if(aberto&&!temQtd&&emp==maxE)ped.push('o MEI pode ter até '+maxE+' '+(maxE>1?'empregados':'empregado')+
+   ' em '+ano+', e você respondeu "'+respEmp+'" — diga quantos são em "Quantos empregados no começo", '+
+   'porque acima disso o MEI não serve');
+ if(nEmp>0&&nEmp<=maxE)nota='Com empregado, o MEI só se mantém se cada um receber exclusivamente '+
+   '1 salário mínimo ou o piso da categoria — acima disso o enquadramento cai.';
+ if(consSn=='Sim')m.push('profissão que exige registro em conselho (OAB, CRM, CRC e outros) não entra no MEI');
+
+ var anual=0;
+ if(estim>0)anual=estim; else if(mens>0)anual=mens*mm;
+ var quanto=(mm<12)?('o teto do MEI começando em '+mesPt(ini)+' é proporcional: '+mm+' '+(mm>1?'meses':'mês')+
+     ' × '+brl(tetoMes)+' = '+brl(teto)):('o teto do MEI em '+ano+' é de '+brl(tetoAno));
+ if(anual>0){
+  if(anual>teto)m.push(quanto+', e o que você informou dá '+brl(anual));
+ } else if(fx>tetoAno){
+  if(fx>81000&&fx<=360000&&tetoAno>81000)
+   ped.push(quanto+'. A faixa que você marcou começa em R$ 81 mil, que era o teto antigo, '+
+     'e não diz se você fica abaixo ou acima do teto de agora — informe quanto espera faturar por ano.');
+  else m.push(quanto+', e o faturamento previsto passa disso');
+ }
+
+ var c=normCnae(cnae);
+ if(c.length){
+  var fora=c.filter(function(x){return CNAE_MEI.indexOf(x)<0});
+  if(fora.length)m.push('a atividade informada ('+fora.join(', ')+') não está na lista de ocupações permitidas ao MEI');
+ }
+ if(!sug)sug=(com?'sociedade limitada (LTDA)':'sociedade limitada unipessoal (SLU)');
+ return {motivos:m, pedidos:ped, nota:nota, sugestao:sug, teto:teto, tetoAno:tetoAno, meses:mm, ano:ano, maxEmp:maxE};
+}
+function normCnae(t){
+ var r=[], re=/(\d{4})-?(\d)\/?(\d{2})/g, x;
+ while((x=re.exec(t||''))!==null)r.push(x[1]+'-'+x[2]+'/'+x[3]);
+ return r;
+}
+function mesPt(d){
+ var n=['janeiro','fevereiro','março','abril','maio','junho','julho','agosto','setembro','outubro','novembro','dezembro'];
+ var p=String(d).split('-'); if(p.length<2)return 'o mês informado';
+ var m=parseInt(p[1],10); return (n[m-1]||'o mês informado')+' de '+p[0];
+}
+function dataBr(v){
+ var m=String(v||'').match(/^(\d{4})-(\d{2})-(\d{2})$/);
+ return m?(m[3]+'/'+m[2]+'/'+m[1]):(v||'')}
+function brl(v){ return 'R$ '+(v||0).toLocaleString('pt-BR',{minimumFractionDigits:2,maximumFractionDigits:2}); }
+
+function meiPainel(){
+ var p=document.getElementById('meipainel'); if(!p)return;
+ if(ETAPA==2&&!TIPO){
+  p.innerHTML='<b>Este link está incompleto.</b><br>Ele abre a ficha sem saber qual tipo de empresa '+
+   'foi definido para você, então aparecem perguntas que talvez não sejam do seu caso. '+
+   'Responda o nosso e-mail pedindo o link completo da sua ficha — é rápido, e assim você só '+
+   'preenche o que o seu caso exige.';
+  p.classList.remove('hide'); return; }
+ var esc=TIPO||'';
+ if(esc!='MEI'){ p.classList.add('hide'); p.innerHTML=''; return; }
+ var r=impedeMEI();
+ var notaHt=r.nota?('<div style="margin-top:8px">'+r.nota+'</div>'):'';
+ if(!r.motivos.length&&r.pedidos.length){
+  p.innerHTML='<b>Falta um número para a gente conferir o MEI.</b><br>'+
+    '<ul style="margin:8px 0 0 18px;padding:0">'+r.pedidos.map(function(x){return '<li>'+x+'</li>'}).join('')+'</ul>'+notaHt;
+  p.classList.remove('hide'); return; }
+ if(!r.motivos.length){
+  if(r.nota){ p.innerHTML='<b>Sobre o empregado do MEI.</b>'+notaHt; p.classList.remove('hide'); return; }
+  p.classList.add('hide'); p.innerHTML=''; return; }
+ p.innerHTML='<b>Atenção: pelo que você respondeu, o MEI não cabe nesse caso.</b><br>'+
+   '<ul style="margin:8px 0 8px 18px;padding:0">'+r.motivos.map(function(x){return '<li>'+x+'</li>'}).join('')+'</ul>'+
+   'O caminho que costuma servir nessa situação é abrir uma '+r.sugestao+', que tem custo e impostos diferentes. '+
+   'Você pode continuar e enviar do mesmo jeito: a gente confere, calcula a diferença e te explica antes de registrar qualquer coisa. '+
+   'Se preferir, volte e troque o tipo de empresa agora.'+notaHt;
+ p.classList.remove('hide');
+}
+var REGRAS=[["R1", "t_finalidade = sem fins lucrativos", "Associação, Fundação ou Organização religiosa conforme t_sfl_tipo; 'Outra' vai para triagem manual", "RCPJ"], ["R2", "t_finalidade = cooperativa", "Cooperativa; alerta se menos de 20 pessoas físicas, ou menos de 7 se de trabalho", "Junta Comercial"], ["R3", "lucro + só eu + conselho = OAB", "Sociedade Individual de Advocacia (razão social = nome do titular + expressão própria)", "OAB (seccional)"], ["R4", "lucro + com outras pessoas + conselho = OAB", "Sociedade de advogados (natureza 223-2, sociedade simples pura)", "OAB (seccional)"], ["R5", "lucro + só eu + sem outra empresa + sem cargo público + receita bruta do ano anterior dentro do teto do MEI do ano (R$ 81.000,00 em 2026; R$ 110.000,00 em 2027; R$ 140.000,00 a partir de 2028) + empregados dentro do limite do ano (1 até 31/12/2026; até 2 a partir de 01/01/2027)", "MEI possível; confirmar a ocupação na Tabela A do Anexo XI da Res. CGSN 140/2018 antes de sugerir. Tetos: LC 123/2006, art. 18-A, § 1º, na redação da LC 238/2026 (R$ 140.000,00, com efeitos em 01/01/2028) e LC 238/2026, art. 2º (R$ 110.000,00 no ano-calendário de 2027)", "Portal do Empreendedor"], ["R6", "lucro + só eu (não cabe MEI)", "SLU como sugestão (limita a responsabilidade); Empresário individual como alternativa", "Junta Comercial"], ["R7", "lucro + com sócios + conselho que não seja OAB, ou atividade intelectual", "Decisão técnica do Societário entre Sociedade simples (RCPJ) e Ltda. (Junta); o sistema marca 'decidir'", "RCPJ ou Junta"], ["R8", "lucro + com sócios + demais casos", "Sociedade limitada (Ltda.); porte ME ou EPP pela faixa de faturamento", "Junta Comercial"], ["R9", "sócio empresa estrangeira, S.A., SPE, holding com regra própria, ou resposta 'Outro'", "Triagem manual: o formulário grava e o Societário conduz por contato", "—"]];
+var ALERTAS=[["t_cargo_publico = Sim", "verificar desimpedimento antes de qualquer tipo; impede MEI para parte dos casos e exige declaração de desimpedimento do administrador"], ["t_outra_empresa = Sim", "afasta MEI (não pode ser sócio, titular ou administrador de outra empresa)"], ["t_contratar maior que 1", "até 31/12/2026 o MEI pode ter 1 empregado (Res. CGSN 140/2018, art. 105); de 01/01/2027 em diante, até 2, cada um recebendo 1 salário mínimo ou o piso da categoria (LC 123/2006, art. 18-C, na redação da LC 238/2026; art. 10, II, da LC 238/2026). Acima disso, não cabe MEI"], ["e_tipo_local = Em casa ou Sem local", "viabilidade como empresa sem estabelecimento: tipo de unidade produtiva e nenhuma atividade auxiliar (Empreenda Fácil SP)"], ["e_licencas diferente de Nenhum", "abrir tarefa de licenciamento (alvará, vigilância, bombeiros) depois do CNPJ"], ["t_fat_anual acima de R$ 4,8 milhões", "fora do porte ME/EPP; escritório decide regime e visto de advogado no contrato (exigido quando a sociedade não é ME ou EPP)"], ["p_estrangeiro = Sim", "exigir procuração com tradução e documento de identificação; sócio PJ estrangeiro vai para triagem manual"], ["cliente quer IBS e CBS por fora do DAS, na abertura", "o optante do Simples pode apurar e recolher IBS e CBS pelo regime regular (LC 214/2025, art. 41, § 3º). A empresa em início de atividade formaliza a intenção no momento em que solicita a inscrição do CNPJ, pelo Acompanhamento ao Protocolo Redesim, no Módulo Administração Tributária (MAT). A janela excepcional do 1º semestre de 2027 correu de 01/09 a 30/10/2026 e está fechada; as janelas ordinárias são setembro e março de cada ano; o cancelamento da opção para o 1º semestre de 2027 vai de 03/11 a 20/12/2026. O prazo de quem abre a empresa depois de 30/10/2026 não está no manual da Receita: a confirmar antes de prometer ao cliente"], ["tipo = MEI", "a ficha de pessoa (seção I) vale para o MEI só no que o Portal do Empreendedor pede: identidade, CPF, nascimento, título de eleitor ou recibo do IRPF, endereço residencial, contato e conta gov.br do próprio titular. Estado civil, regime de bens, profissão e filiação não são pedidos no MEI e ficam fora; comprovante de endereço residencial só entra se o município exigir no licenciamento"], ["e_iptu_tem = O imóvel não tem IPTU", "imóvel sem inscrição imobiliária: a viabilidade não sai automática e o escritório tem de localizar a quadra fiscal no mapa da prefeitura (em São Paulo, GeoSampa) antes de pedir a viabilidade. Usar o que o cliente respondeu em e_iptu_referencia; risco de o município barrar o endereço depois"], ["e_iptu_tem = Não tenho em mãos agora, ou Não sei", "só falta o número: pedir ao cliente o carnê do IPTU ou a inscrição imobiliária antes de abrir a viabilidade. Não é o mesmo caso do imóvel que não tem IPTU"]];
+var PESSOAS=[{"secao": "I", "id": "p_papel", "rotulo": "Papel na empresa ou entidade", "tipo": "select", "obrig": "S", "aplica": ["MEI", "EI", "SLU", "LTDA", "SS", "ADV", "COOP", "ASSOC", "FUND", "REL"], "etapa": "2", "validacao": "MEI: Titular (único). Demais: Titular | Sócio | Sócio-administrador | Administrador não sócio | Procurador | Presidente | Vice | Secretário | Tesoureiro | Conselheiro fiscal | Diretor | Fundador | Instituidor | Cooperado", "destino": "Ato"}, {"secao": "I", "id": "p_nome", "rotulo": "Nome completo", "tipo": "texto", "obrig": "S", "aplica": ["MEI", "EI", "SLU", "LTDA", "SS", "ADV", "COOP", "ASSOC", "FUND", "REL"], "etapa": "2", "validacao": "igual ao documento", "destino": "DBE / Ato"}, {"secao": "I", "id": "p_cpf", "rotulo": "CPF", "tipo": "cpf", "obrig": "S", "aplica": ["MEI", "EI", "SLU", "LTDA", "SS", "ADV", "COOP", "ASSOC", "FUND", "REL"], "etapa": "2", "validacao": "dígito verificador conferido no navegador e no servidor", "destino": "DBE / Ato"}, {"secao": "I", "id": "p_nasc", "rotulo": "Data de nascimento", "tipo": "data", "obrig": "S", "aplica": ["MEI", "EI", "SLU", "LTDA", "SS", "ADV", "COOP", "ASSOC", "FUND", "REL"], "etapa": "2", "validacao": "titular e sócio com 18 anos ou mais; 16 a 17 só se emancipado (declaração de capacidade)", "destino": "DBE / Ato"}, {"secao": "I", "id": "p_nacionalidade", "rotulo": "Nacionalidade", "tipo": "texto", "obrig": "S", "aplica": ["MEI", "EI", "SLU", "LTDA", "SS", "ADV", "COOP", "ASSOC", "FUND", "REL"], "etapa": "2", "validacao": "", "destino": "Ato"}, {"secao": "I", "id": "p_estado_civil", "rotulo": "Estado civil", "tipo": "select", "obrig": "S", "aplica": ["EI", "SLU", "LTDA", "SS", "ADV", "COOP", "ASSOC", "FUND", "REL"], "etapa": "2", "validacao": "Solteiro | Casado | União estável | Divorciado | Viúvo | Separado", "destino": "Ato / RCPJ"}, {"secao": "I", "id": "p_regime_bens", "rotulo": "Regime de bens", "tipo": "select", "obrig": "C", "aplica": ["EI", "SLU", "LTDA", "SS", "ADV", "COOP", "ASSOC", "FUND", "REL"], "etapa": "2", "validacao": "obrigatório se casado ou união estável; o regime de bens entra na qualificação do sócio casado (exigência de cartório de RCPJ)", "destino": "Ato / RCPJ"}, {"secao": "I", "id": "p_profissao", "rotulo": "Profissão", "tipo": "texto", "obrig": "S", "aplica": ["EI", "SLU", "LTDA", "SS", "ADV", "COOP", "ASSOC", "FUND", "REL"], "etapa": "2", "validacao": "", "destino": "Ato / RCPJ"}, {"secao": "I", "id": "p_filiacao", "rotulo": "Nome da mãe e do pai", "tipo": "texto", "obrig": "S", "aplica": ["EI", "SLU", "LTDA", "SS", "ADV", "COOP", "ASSOC", "FUND", "REL"], "etapa": "2", "validacao": "exigido por cartórios de RCPJ na qualificação", "destino": "RCPJ"}, {"secao": "I", "id": "p_doc_tipo", "rotulo": "Documento de identidade", "tipo": "select", "obrig": "S", "aplica": ["MEI", "EI", "SLU", "LTDA", "SS", "ADV", "COOP", "ASSOC", "FUND", "REL"], "etapa": "2", "validacao": "RG | CNH | Carteira de conselho | RNM (estrangeiro)", "destino": "DBE / Ato"}, {"secao": "I", "id": "p_doc_num", "rotulo": "Número do documento", "tipo": "texto", "obrig": "S", "aplica": ["MEI", "EI", "SLU", "LTDA", "SS", "ADV", "COOP", "ASSOC", "FUND", "REL"], "etapa": "2", "validacao": "máscara de RG com dígito X", "destino": "DBE / Ato"}, {"secao": "I", "id": "p_doc_orgao", "rotulo": "Órgão emissor e UF", "tipo": "texto", "obrig": "S", "aplica": ["MEI", "EI", "SLU", "LTDA", "SS", "ADV", "COOP", "ASSOC", "FUND", "REL"], "etapa": "2", "validacao": "", "destino": "Ato"}, {"secao": "I", "id": "p_doc_emissao", "rotulo": "Data de emissão", "tipo": "data", "obrig": "N", "aplica": ["MEI", "EI", "SLU", "LTDA", "SS", "ADV", "COOP", "ASSOC", "FUND", "REL"], "etapa": "2", "validacao": "", "destino": "Ato"}, {"secao": "I", "id": "p_titulo_ir", "rotulo": "Número do título de eleitor ou do recibo da última declaração de IRPF (migrante: número de registro de estrangeiro)", "tipo": "texto", "obrig": "S", "aplica": ["MEI", "EI", "SLU", "LTDA", "SS", "ADV", "COOP", "ASSOC", "FUND", "REL"], "etapa": "2", "validacao": "um dos dois; usado no cadastro do quadro de sócios na Receita", "destino": "DBE"}, {"secao": "I", "id": "p_end_cep", "rotulo": "CEP residencial", "tipo": "cep", "obrig": "S", "aplica": ["MEI", "EI", "SLU", "LTDA", "SS", "ADV", "COOP", "ASSOC", "FUND", "REL"], "etapa": "2", "validacao": "^\\d{5}-?\\d{3}$", "destino": "Ato / DBE"}, {"secao": "I", "id": "p_end_logradouro", "rotulo": "Logradouro, número e complemento", "tipo": "texto", "obrig": "S", "aplica": ["MEI", "EI", "SLU", "LTDA", "SS", "ADV", "COOP", "ASSOC", "FUND", "REL"], "etapa": "2", "validacao": "", "destino": "Ato / DBE"}, {"secao": "I", "id": "p_end_bairro_cidade_uf", "rotulo": "Bairro, cidade e UF", "tipo": "texto", "obrig": "S", "aplica": ["MEI", "EI", "SLU", "LTDA", "SS", "ADV", "COOP", "ASSOC", "FUND", "REL"], "etapa": "2", "validacao": "", "destino": "Ato / DBE"}, {"secao": "I", "id": "p_email", "rotulo": "E-mail da pessoa", "tipo": "email", "obrig": "S", "aplica": ["MEI", "EI", "SLU", "LTDA", "SS", "ADV", "COOP", "ASSOC", "FUND", "REL"], "etapa": "2", "validacao": "", "destino": "DBE"}, {"secao": "I", "id": "p_cel", "rotulo": "Celular da pessoa", "tipo": "tel", "obrig": "S", "aplica": ["MEI", "EI", "SLU", "LTDA", "SS", "ADV", "COOP", "ASSOC", "FUND", "REL"], "etapa": "2", "validacao": "", "destino": "DBE"}, {"secao": "I", "id": "p_participacao", "rotulo": "Participação no capital (%)", "tipo": "numero", "obrig": "C", "aplica": ["EI", "SLU", "LTDA", "SS", "ADV", "COOP", "ASSOC", "FUND", "REL"], "etapa": "2", "validacao": "obrigatório para sócio; soma das participações = 100%, conferida no envio", "destino": "Ato"}, {"secao": "I", "id": "p_pj", "rotulo": "A pessoa é uma empresa", "tipo": "radio", "obrig": "C", "aplica": ["EI", "SLU", "LTDA", "SS", "ADV", "COOP", "ASSOC", "FUND", "REL"], "etapa": "2", "validacao": "Sim | Não; se sim, pedir CNPJ, razão social e contrato com registro", "destino": "DBE / Ato"}, {"secao": "I", "id": "p_pj_cnpj", "rotulo": "CNPJ da empresa sócia", "tipo": "cnpj", "obrig": "C", "aplica": ["EI", "SLU", "LTDA", "SS", "ADV", "COOP", "ASSOC", "FUND", "REL"], "etapa": "2", "validacao": "dígito verificador; obrigatório se p_pj = Sim", "destino": "DBE / Ato"}, {"secao": "I", "id": "p_estrangeiro", "rotulo": "A pessoa é estrangeira ou mora no exterior", "tipo": "radio", "obrig": "C", "aplica": ["MEI", "EI", "SLU", "LTDA", "SS", "ADV", "COOP", "ASSOC", "FUND", "REL"], "etapa": "2", "validacao": "Sim | Não; se sim, documento de identificação e procuração com representante no Brasil, com tradução", "destino": "Ato (documentos)"}, {"secao": "I", "id": "p_conselho_num", "rotulo": "Número no conselho profissional", "tipo": "texto", "obrig": "C", "aplica": ["EI", "SLU", "LTDA", "SS", "ADV", "COOP", "ASSOC", "FUND", "REL"], "etapa": "2", "validacao": "obrigatório se t_conselho_sn = Sim", "destino": "Ato / Conselho"}, {"secao": "I", "id": "p_govbr", "rotulo": "Conta gov.br", "tipo": "radio", "obrig": "S", "aplica": ["MEI", "EI", "SLU", "LTDA", "SS", "ADV", "COOP", "ASSOC", "FUND", "REL"], "etapa": "2", "validacao": "Sim, prata ou ouro | Sim, bronze | Não tenho | Não sei. No MEI a conta tem de ser do próprio titular e de nível prata ou ouro", "destino": "Operação"}, {"secao": "I", "id": "p_ecpf", "rotulo": "Possui certificado digital e-CPF", "tipo": "radio", "obrig": "N", "aplica": ["MEI", "EI", "SLU", "LTDA", "SS", "ADV", "COOP", "ASSOC", "FUND", "REL"], "etapa": "2", "validacao": "Sim | Não | Não sei", "destino": "Operação"}, {"secao": "I", "id": "p_f_doc", "rotulo": "Foto ou PDF do documento de identidade, frente e verso", "tipo": "arquivo", "obrig": "S", "aplica": ["MEI", "EI", "SLU", "LTDA", "SS", "ADV", "COOP", "ASSOC", "FUND", "REL"], "etapa": "2", "validacao": "JPG, PNG ou PDF; até 8 MB; imagem reduzida a 1800 px, como na ficha", "destino": "Drive"}, {"secao": "I", "id": "p_f_end", "rotulo": "Comprovante de endereço residencial", "tipo": "arquivo", "obrig": "S", "aplica": ["EI", "SLU", "LTDA", "SS", "ADV", "COOP", "ASSOC", "FUND", "REL"], "etapa": "2", "validacao": "até 8 MB", "destino": "Drive"}, {"secao": "I", "id": "p_f_casamento", "rotulo": "Certidão de casamento ou de união", "tipo": "arquivo", "obrig": "C", "aplica": ["EI", "SLU", "LTDA", "SS", "ADV", "COOP", "ASSOC", "FUND", "REL"], "etapa": "2", "validacao": "se casado ou união estável", "destino": "Drive"}, {"secao": "I", "id": "p_f_conselho", "rotulo": "Carteira ou certidão do conselho profissional", "tipo": "arquivo", "obrig": "C", "aplica": ["EI", "SLU", "LTDA", "SS", "ADV", "COOP", "ASSOC", "FUND", "REL"], "etapa": "2", "validacao": "se t_conselho_sn = Sim", "destino": "Drive"}, {"secao": "I", "id": "p_f_procuracao", "rotulo": "Procuração (e tradução, se estrangeiro)", "tipo": "arquivo", "obrig": "C", "aplica": ["EI", "SLU", "LTDA", "SS", "ADV", "COOP", "ASSOC", "FUND", "REL"], "etapa": "2", "validacao": "se procurador ou estrangeiro", "destino": "Drive"}, {"secao": "I", "id": "p_lista_arquivo", "rotulo": "Planilha com todos os fundadores ou associados (alternativa a uma ficha por pessoa)", "tipo": "arquivo", "obrig": "N", "aplica": ["COOP", "ASSOC", "REL"], "etapa": "2", "validacao": "modelo .xlsx fornecido; leitor valida CPF linha a linha", "destino": "Drive / RCPJ"}];
+var ETAPA=(location.search.match(/[?&]t=([^&]+)/)?2:1), TOKEN=(location.search.match(/[?&]t=([^&]+)/)||[])[1]||'';
+var TIPOURL=(location.search.match(/[?&]tipo=([A-Z]+)/)||[])[1]||'', TIPO=TIPOURL;
+
+function dig(v){return (v||'').replace(/\D/g,'')}
+function mask(v,m){if(m=='moeda'){
+ var t=String(v||'').replace(/[^\d,]/g,''),p=t.split(',');
+ var i=p[0].replace(/\D/g,'').replace(/^0+(?=\d)/,'');
+ var c=(p.length>1)?p[1].replace(/\D/g,'').slice(0,2):null;
+ if(!i&&c===null)return'';
+ var mi=(i||'0').replace(/\B(?=(\d{3})+(?!\d))/g,'.');
+ return 'R$ '+mi+((c===null)?'':','+c)}
+ var d=dig(v),o='',i=0;if(m.indexOf('+55')==0&&d.indexOf('55')==0)d=d.slice(2);
+ for(var k=0;k<m.length&&i<d.length;k++){o+=(m[k]=='0')?d[i++]:m[k]}
+ if(m.indexOf('+55')==0&&o.length&&o.indexOf('+55')!=0)o='+55 ('+o;return o}
+function cpfOk(c){c=dig(c);if(c.length!=11||/^(\d)\1+$/.test(c))return false;for(var t=9;t<11;t++){var s=0;for(var i=0;i<t;i++)s+=c[i]*(t+1-i);if(((10*s)%11)%10!=c[t])return false}return true}
+function cnpjOk(c){c=dig(c);if(c.length!=14||/^(\d)\1+$/.test(c))return false;var w=[6,5,4,3,2,9,8,7,6,5,4,3,2];for(var t=12;t<14;t++){var s=0;for(var i=0;i<t;i++)s+=c[i]*w[i+13-t];var r=s%11;if((r<2?0:11-r)!=c[t])return false}return true}
+function val(n){var r=document.querySelector('[name="'+CSS.escape(n)+'"]:checked');if(r)return r.value;
+ var e=document.querySelector('[name="'+CSS.escape(n)+'"]:not([type=radio]):not([type=checkbox])');return e?e.value:''}
+function byId(id){var e=document.getElementById(id);if(!e)return '';
+ if(e.classList&&(e.classList.contains('op')||e.classList.contains('esc'))){var r=e.querySelector('input:checked');return r?r.value:''}return e.value||''}
+function faixaFat(t){t=String(t||'');
+ if(!t)return 0;
+ if(/at[ée]\s*R\$\s*81/i.test(t))return 81000;
+ if(/81\s*mil\s*a\s*R\$\s*360/i.test(t))return 360000;
+ if(/360\s*mil\s*a\s*R\$\s*4[.,]8/i.test(t))return 4800000;
+ if(/acima\s*de\s*R\$\s*4[.,]8/i.test(t))return 4800001;
+ if(/ainda n[ãa]o sei/i.test(t))return 0;
+ return num(t)}
+function num(v){var t=String(v||'').replace(/[^\d,]/g,'').split(',');
+ var i=parseInt((t[0]||'').replace(/\D/g,'')||'0',10);
+ var c=(t.length>1)?parseInt(((t[1]||'')+'00').slice(0,2),10):0;
+ return i+c/100}
+function extenso(n){n=Math.floor(n);if(!n)return'';
+ var u=['','um','dois','três','quatro','cinco','seis','sete','oito','nove','dez','onze','doze','treze','quatorze','quinze','dezesseis','dezessete','dezoito','dezenove'];
+ var d=['','','vinte','trinta','quarenta','cinquenta','sessenta','setenta','oitenta','noventa'];
+ var ce=['','cento','duzentos','trezentos','quatrocentos','quinhentos','seiscentos','setecentos','oitocentos','novecentos'];
+ function tres(x){if(!x)return'';if(x==100)return'cem';var o='',c=Math.floor(x/100),r=x%100;
+  if(c)o=ce[c];if(r){if(o)o+=' e ';o+=(r<20)?u[r]:(d[Math.floor(r/10)]+(r%10?' e '+u[r%10]:''))}return o}
+ var parts=[];[[1000000000,'bilhão','bilhões'],[1000000,'milhão','milhões'],[1000,'mil','mil']].forEach(function(e){
+  var q=Math.floor(n/e[0]);if(q){n=n%e[0];parts.push(tres(q)+' '+(q==1?e[1]:e[2]))}});
+ if(n)parts.push(tres(n));
+ return parts.join(' e ')}
+function moedaAviso(e){var n2=num(e.value);var a=e.parentNode.querySelector('.cep');
+ if(!a){a=document.createElement('div');a.className='cep';e.insertAdjacentElement('afterend',a)}
+ a.textContent=n2?('Confira: '+extenso(n2)+' reais'):''}
+var PEND=['Não sei','Nao sei','Não sei informar','Não tenho','Nao tenho','Não tenho em mãos',
+ 'Não tenho em maos','A confirmar','Não sei dizer','Preciso confirmar'];
+function faltando(){
+ var fora=[];
+ document.querySelectorAll('.c').forEach(function(c){
+   if(c.classList.contains('hide')||c.classList.contains('aviso'))return;
+   var fsx=c.closest('fieldset');
+   if(fsx&&fsx.dataset.etapa&&fsx.dataset.etapa!=String(ETAPA))return;
+   var rot=c.querySelector('label'); if(!rot)return;
+   var e=c.querySelector('input,select,textarea'); if(!e)return;
+   var tem,resp='';
+   if(e.type=='radio'||e.type=='checkbox'){var mk=c.querySelector('input:checked');tem=!!mk;if(mk)resp=mk.value}
+   else if(e.type=='file'){tem=!!(e.files&&e.files.length)}
+   else{tem=!!e.value;resp=e.value}
+   var nm=rot.textContent.replace('*','').trim();
+   if(!tem){fora.push(nm);return}
+   if(PEND.indexOf(String(resp).trim())>=0)fora.push(nm+' — o cliente respondeu "'+String(resp).trim()+'"')});
+ return fora}
+
+function triagem(){
+ var f=byId('t_finalidade')||'', sfl=byId('t_sfl_tipo')||'', q=byId('t_pessoas')||'',
+     cons=(byId('t_conselho')||'').toUpperCase(), consSn=byId('t_conselho_sn')||'',
+     fat=faixaFat(byId('t_fat_anual')), outra=byId('t_outra_empresa')||'', cargo=byId('t_cargo_publico')||'',
+     emp=parseInt(dig(byId('t_contratar'))||'0',10);
+ var fl=f.toLowerCase(), so=/s[óo] eu|sozinh/i.test(q), com=/outras|s[óo]cio/i.test(q), oab=cons.indexOf('OAB')>=0;
+ var sug='', reg='', por='';
+ if(/sem fins/.test(fl)){ sug=(sfl.indexOf('Associa')==0?'ASSOC':sfl.indexOf('Funda')==0?'FUND':sfl.indexOf('religios')>=0?'REL':'OUT'); reg='RCPJ'; por='R1'; }
+ else if(/cooperativa/.test(fl)){ sug='COOP'; reg='JUCESP'; por='R2'; }
+ else if(so&&consSn=='Sim'&&oab){ sug='ADV'; reg='OAB'; por='R3'; }
+ else if(com&&consSn=='Sim'&&oab){ sug='ADV'; reg='OAB'; por='R4'; }
+ else if(so&&meiCabeFat()&&outra!='Sim'&&cargo!='Sim'&&emp<=empMEI(anoMEI(byId('t_inicio')))){ sug='MEI'; reg='Portal do Empreendedor'; por='R5'; }
+ else if(so){ sug='SLU'; reg='JUCESP'; por='R6'; }
+ else if(com&&(consSn=='Sim'&&!oab)){ sug='SS'; reg='RCPJ ou JUCESP (decisão do Societário)'; por='R7'; }
+ else if(com){ sug='LTDA'; reg='JUCESP'; por='R8'; }
+ else { sug='OUT'; reg='triagem manual'; por='R9'; }
+ var al=[];
+ if(cargo=='Sim')al.push('cargo público: verificar desimpedimento; impede MEI em parte dos casos');
+ if(outra=='Sim')al.push('já participa de outra empresa: afasta MEI');
+ if(emp>1)al.push('quer contratar mais de 1 empregado: confirmar o limite do MEI');
+ var tl=byId('e_tipo_local')||''; if(/casa|sem local/i.test(tl))al.push('empresa sem estabelecimento: conferir tipo de unidade na viabilidade');
+ var ipt=byId('e_iptu_tem')||'';
+ if(/n[ãa]o tem IPTU/i.test(ipt))al.push('imóvel sem IPTU: localizar o cadastro na prefeitura pela quadra fiscal (em São Paulo, GeoSampa) antes da viabilidade; o cliente descreveu como achar');
+ else if(/n[ãa]o tenho em m[ãa]os|n[ãa]o sei/i.test(ipt))al.push('número do IPTU a pedir ao cliente: sem ele a viabilidade não sai automática');
+ var lic=byId('e_licencas')||''; if(lic&&!/nenhum/i.test(lic))al.push('precisa de licença: abrir tarefa de licenciamento');
+ if(fat>4800000)al.push('faturamento acima de R$ 4,8 milhões: fora do porte ME/EPP');
+ var tesc=TIPO||sug;
+ if(tesc=='MEI'){ var im=impedeMEI();
+   im.motivos.forEach(function(x){al.push('MEI NAO CABE: '+x)});
+   im.pedidos.forEach(function(x){al.push('MEI A CONFIRMAR: '+x)});
+   if(im.nota)al.push('MEI com empregado: conferir que cada um recebe exclusivamente 1 salario minimo ou o piso da categoria (LC 123/2006, art. 18-C, na redacao da LC 238/2026)');
+   var fonte=(im.ano>=2028)?'LC 238/2026, art. 1o (art. 18-A, §§ 1o e 2o da LC 123/2006), efeitos desde 01/01/2028'
+     :(im.ano==2027?'LC 238/2026, art. 2o':'LC 123/2006, art. 18-A, §§ 1o e 2o');
+   al.push('MEI com inicio em '+im.ano+': teto de '+brl(im.tetoAno)+' no ano'+
+     (im.meses<12?(', proporcional a '+im.meses+' meses = '+brl(im.teto)):'')+
+     ', ate '+im.maxEmp+' empregado(s) ('+fonte+')');
+   al.push('Ficha MEI nao coleta estado civil, regime de bens, filiacao, profissao nem comprovante de endereco residencial (o Portal do Empreendedor nao exige): pedir ao cliente se o caso precisar, como locacao, certidao ou procuracao');
+   if(im.ano>=2027)al.push('ATENCAO: a ampliacao do teto do MEI esta condicionada a consideracao da renuncia de receita na LOA dos exercicios de 2027 a 2029 (LC 238/2026, art. 3o) — conferir antes de prometer o limite novo ao cliente'); }
+ if((tesc=='MEI'||tesc=='EI'||tesc=='SLU')&&com)al.push('INCOERENTE: o tipo pedido não admite sócio e a resposta diz que vai ter sócio — confirmar antes de redigir');
+ if((tesc=='LTDA'||tesc=='SS'||tesc=='COOP')&&so)al.push('INCOERENTE: o tipo pedido exige mais de uma pessoa e a resposta diz que é sozinho — confirmar antes de redigir');
+ if(tesc=='ADV'&&consSn!='Sim')al.push('INCOERENTE: pediu sociedade de advocacia e não declarou registro em conselho — confirmar a OAB');
+ var fa=byId('e_forma_atuacao')||'';
+ if(/casa/i.test(tl)&&/estabelecimento fixo/i.test(fa))al.push('endereço residencial declarado como estabelecimento fixo: conferir no município se a atividade é permitida no local e se exige licença');
+ return {tipo:sug,nome:TIPOS[sug]||sug,registro:reg,regra:por,alertas:al};
+}
+
+function upd(){
+ try{meiPainel()}catch(e){}
+ document.querySelectorAll('.op,.esc').forEach(function(o){o.querySelectorAll('label').forEach(function(l){l.classList.toggle('on',l.querySelector('input').checked)})});
+
+ var fin=byId('t_finalidade');
+ var g=/sem fins/i.test(fin)?'SFL':(/^\s*cooperativa/i.test(fin)?'COOP':(/^\s*empresa/i.test(fin)?'LUCRO':''));
+ var esco=document.getElementById('t_tipo_desejado');
+ if(esco){esco.querySelectorAll('label[data-fin]').forEach(function(l){
+   var mostra=!g||l.dataset.fin==g||l.dataset.fin=='TODOS';
+   l.classList.toggle('hide',!mostra);
+   var i=l.querySelector('input'); if(!mostra&&i.checked){i.checked=false;l.classList.remove('on')}})}
+
+ var m=esco&&esco.querySelector('input:checked');
+ TIPO=m?(m.closest('label').dataset.cod||''):TIPOURL;
+
+ document.querySelectorAll('[data-show-triagem]').forEach(function(b){
+   if(TIPO){b.classList.remove('hide');return}   /* com tipo escolhido, quem manda e data-tipos */
+   var p=b.dataset.showTriagem.split('='),v=byId(p[0])||val(p[0]),alvo=p[1],ok;
+   if(alvo=='SEMFINS')ok=/sem fins lucrativos/i.test(v);
+   else if(alvo=='COOPERATIVA')ok=/^\s*cooperativa/i.test(v);
+   else if(alvo=='Fundacao')ok=/funda[çc][ãa]o/i.test(v);
+   else ok=(v==alvo);
+   b.classList.toggle('hide',!ok)});
+ document.querySelectorAll('[data-ja-sabe]').forEach(function(b){
+   if(TIPO&&b.dataset.jaSabe.split(',').indexOf(TIPO)>=0)b.classList.add('hide')});
+
+ document.querySelectorAll('[data-show]').forEach(function(b){
+   var p=b.dataset.show.split('='),v=byId(p[0])||val(p[0]),alvo=p[1],ok;
+   if(alvo=='PREENCHIDO')ok=!!v;
+   else if(alvo=='IPTU_PEDE_ANEXO')ok=/tenho o n[úu]mero|n[ãa]o tenho em m[ãa]os/i.test(v);
+   else if(alvo=='CASADO_UNIAO')ok=/casad|uni[ãa]o/i.test(v);
+   else if(alvo=='SEMFINS')ok=/sem fins lucrativos/i.test(v);
+   else if(alvo=='COOPERATIVA')ok=/^\s*cooperativa/i.test(v);
+   else if(alvo=='Fundacao')ok=/funda[çc][ãa]o/i.test(v);
+   else if(alvo.charAt(0)=='!')ok=!!v&&v!=alvo.slice(1); else ok=(v==alvo);
+   b.classList.toggle('hide',!ok)});
+
+ document.querySelectorAll('fieldset[data-etapa]').forEach(function(b){
+   b.classList.toggle('hide', b.dataset.etapa!=String(ETAPA))});
+
+ var semEnd = /ainda n[ãa]o tenho endere/i.test(byId('e_tipo_local'));
+ document.querySelectorAll('[data-end]').forEach(function(b){b.classList.toggle('hide',semEnd)});
+ document.querySelectorAll('[data-sem-endereco]').forEach(function(b){b.classList.toggle('hide',!semEnd)});
+
+ document.querySelectorAll('.c[data-tipos]').forEach(function(b){
+   if(TIPO&&b.dataset.tipos.split(',').indexOf(TIPO)<0){b.classList.add('hide');return}
+   if(TIPO&&b.hasAttribute('data-ja-sabe')&&b.dataset.jaSabe.split(',').indexOf(TIPO)>=0){b.classList.add('hide');return}
+   if(b.hasAttribute('data-end')&&semEnd){b.classList.add('hide');return}
+   if(b.hasAttribute('data-sem-endereco')){b.classList.toggle('hide',!semEnd);return}
+   if(!b.hasAttribute('data-show')&&!b.hasAttribute('data-show-triagem'))b.classList.remove('hide')});
+ var mudou=0;
+ document.querySelectorAll('.c.hide').forEach(function(c){
+   var fsx=c.closest('fieldset');
+   if(fsx&&fsx.dataset.etapa&&fsx.dataset.etapa!=String(ETAPA))return;
+   c.querySelectorAll('input,select,textarea').forEach(function(e){
+     if(e.type=='radio'||e.type=='checkbox'){if(e.checked){e.checked=false;mudou=1}}
+     else if(e.value){e.value='';mudou=1}});
+ });
+ if(mudou&&!upd._re){upd._re=1;upd();upd._re=0}
+ passoUpd();
+}
+
+var PASSO=0;
+function passos(){
+ return [].slice.call(document.querySelectorAll('fieldset[data-etapa="'+ETAPA+'"]'))
+   .filter(function(fs){ return fs.querySelector('#pessoas') || !!fs.querySelector('.c:not(.hide)') })}
+function passoUpd(){
+ var ps=passos(); if(!ps.length)return;
+ if(PASSO>ps.length-1)PASSO=ps.length-1; if(PASSO<0)PASSO=0;
+ ps.forEach(function(fs,i){fs.classList.toggle('hide', i!=PASSO)});
+ if(ps[PASSO].classList.contains('rev-fs'))resumo(ps);
+ var lg=ps[PASSO].querySelector('legend');
+ document.getElementById('prog').textContent='Passo '+(PASSO+1)+' de '+ps.length+(lg?' — '+lg.textContent:'');
+ document.getElementById('barra').style.width=Math.round((PASSO+1)/ps.length*100)+'%';
+ document.getElementById('bv').classList.toggle('hide',PASSO===0);
+ var fim=(PASSO===ps.length-1);
+ document.getElementById('ba').classList.toggle('hide',fim);
+ document.getElementById('bt').classList.toggle('hide',!fim)}
+function resumo(ps){
+ var alvo=document.getElementById(ETAPA==2?'resumo2':'resumo1'); if(!alvo)return;
+ var h='';
+ ps.forEach(function(fs,i){
+   if(fs.classList.contains('rev-fs'))return;
+   var itens='';
+   fs.querySelectorAll('.c').forEach(function(c){
+     if(c.classList.contains('hide')||c.classList.contains('aviso'))return;
+     var rot=c.querySelector('label'); if(!rot)return;
+     var nome=rot.textContent.replace('*','').trim(), v='';
+     var marcados=c.querySelectorAll('input[type=radio]:checked,input[type=checkbox]:checked');
+     if(marcados.length){v=[].map.call(marcados,function(x){return x.value}).join(', ')}
+     else{var e=c.querySelector('input:not([type=radio]):not([type=checkbox]),select,textarea');
+       if(!e)return;
+       if(e.type=='file'){v=(e.files&&e.files[0])?e.files[0].name:''}
+       else if(e.type=='date'){v=dataBr(e.value)}else{v=e.value}}
+     if(!v)return;
+     itens+='<dt>'+nome+'</dt><dd>'+v.replace(/</g,'&lt;')+'</dd>'});
+   if(!itens)return;
+   h+='<div class="rev"><b>'+fs.querySelector('legend').textContent+'</b><dl>'+itens+'</dl>'
+     +'<button type="button" data-ir="'+i+'">Editar</button></div>'});
+ alvo.innerHTML=h||'<div class="rev">Nada preenchido ainda.</div>';
+ alvo.querySelectorAll('[data-ir]').forEach(function(b){
+   b.addEventListener('click',function(){PASSO=+b.dataset.ir;passoUpd();window.scrollTo(0,0)})})}
+
+function validaPasso(){
+ limpa(); var erros=0, fs=passos()[PASSO]; if(!fs)return 0;
+ fs.querySelectorAll('[data-req]').forEach(function(e){
+   var box=e.closest('.c'); if(box&&box.classList.contains('hide'))return;
+   var v=(e.type=='radio'||e.type=='checkbox')?!!fs.querySelector('[name="'+CSS.escape(e.name)+'"]:checked'):!!e.value;
+   if(!v){marca(e,'Preencha este campo.');erros++}});
+ fs.querySelectorAll('[data-chk=cpf]').forEach(function(e){if(e.value&&!cpfOk(e.value)){marca(e,'CPF inválido.');erros++}});
+ fs.querySelectorAll('[data-chk=cnpj]').forEach(function(e){if(e.value&&!cnpjOk(e.value)){marca(e,'CNPJ inválido.');erros++}});
+ return erros}
+
+function pessoas(){
+ var n=+document.getElementById('qpes').value||1,h='';
+ for(var i=1;i<=n;i++){h+='<div class="pes"><b>Pessoa '+i+'</b>'+PESSOAS.map(function(c){return campoPessoa(c,i)}).join('')+'</div>'}
+ document.getElementById('pessoas').innerHTML=h;ligar();upd()}
+function campoPessoa(c,i){
+ var nome=c.rotulo+' (pessoa '+i+')', id=c.id+'__'+i, req=c.obrig=='S'?' data-req="1"':'';
+ var ops=(c.validacao||'').split(';')[0];
+ var inp;
+ if(c.tipo=='radio'||c.tipo=='multi'||c.tipo=='checkbox'){
+   var lista=ops.indexOf('|')>=0?ops.split('|').map(function(s){return s.replace(/^.*?:\s*/,'').replace(/\s*\([^)]*\)\s*$/,'').trim()}):['Sim','Não'];
+   inp='<div class="op" id="'+id+'">'+lista.map(function(o){return '<label><input type="'+(c.tipo=='radio'?'radio':'checkbox')+'" name="'+nome+'" value="'+o+'"'+req+'> '+o+'</label>'}).join('')+'</div>';
+ } else if(c.tipo=='arquivo'){ inp='<input type="file" name="'+nome+'" id="'+id+'" data-file="'+nome+'" accept=".pdf,.jpg,.jpeg,.png"'+req+'>';
+ } else if(c.tipo=='cpf'){ inp='<input name="'+nome+'" id="'+id+'" data-mask="000.000.000-00" data-chk="cpf" inputmode="numeric"'+req+'>';
+ } else if(c.tipo=='cnpj'){ inp='<input name="'+nome+'" id="'+id+'" data-mask="00.000.000/0000-00" data-chk="cnpj" inputmode="numeric"'+req+'>';
+ } else if(c.tipo=='cep'){ inp='<input name="'+nome+'" id="'+id+'" data-mask="00000-000" data-cep="1" inputmode="numeric"'+req+'>';
+ } else if(c.tipo=='data'){ inp='<input type="date" name="'+nome+'" id="'+id+'"'+req+'>';
+ } else if(c.tipo=='select'){ var l2=ops.indexOf('|')>=0?ops.split('|').map(function(s){return s.replace(/^.*?:\s*/,'').trim()}):[];
+   inp='<select name="'+nome+'" id="'+id+'"'+req+'><option value="">Selecione</option>'+l2.map(function(o){return '<option>'+o+'</option>'}).join('')+'</select>';
+ } else { inp='<input name="'+nome+'" id="'+id+'"'+req+'>'; }
+ var cond=''; var M={'p_regime_bens':'p_estado_civil=CASADO_UNIAO','p_pj_cnpj':'p_pj=Sim','p_f_casamento':'p_estado_civil=CASADO_UNIAO','p_f_procuracao':'p_estrangeiro=Sim'};
+ if(M[c.id]){var pp=M[c.id].split('=');cond=' data-show="'+pp[0]+'__'+i+'='+pp[1]+'"'}
+ return '<div class="c" data-etapa="2" data-tipos="'+c.aplica.join(',')+'"'+cond+'><label for="'+id+'">'+nome+(c.obrig=='S'?' <span class="o">*</span>':'')+'</label>'+inp+'</div>';
+}
+
+function cepAviso(inp,txt){var c=inp.parentNode.querySelector('.cep');
+ if(!c){c=document.createElement('div');c.className='cep';inp.insertAdjacentElement('afterend',c)}c.textContent=txt}
+function cep(inp){var d=dig(inp.value);if(d.length!=8||inp._ult==d)return;inp._ult=d;
+ cepAviso(inp,'Buscando o endereço...');
+ fetch('https://viacep.com.br/ws/'+d+'/json/').then(function(r){return r.json()}).then(function(j){
+   if(j.erro){cepAviso(inp,'CEP não encontrado. Preencha o endereço à mão.');return}
+   var set=function(sel,v){var e=document.querySelector(sel);if(!e||!v)return;e.value=v;e.classList.remove('err');
+     var m=e.parentNode.querySelector('.msg'); if(m)m.remove()};
+   set('#e_logradouro',j.logradouro);set('#e_bairro',j.bairro);set('#e_cidade',j.localidade);set('#e_uf',j.uf);
+   cepAviso(inp,'Endereço preenchido pelo CEP. Confira e complete o número.');
+   var n=document.getElementById('e_numero'); if(n&&!n.value)n.focus();
+ }).catch(function(){cepAviso(inp,'Não consegui buscar o endereço agora. Preencha à mão.')})}
+
+function ligar(){
+ document.querySelectorAll('[data-mask]').forEach(function(e){if(e._m)return;e._m=1;
+   e.addEventListener('input',function(){e.value=mask(e.value,e.dataset.mask);
+     if(e.dataset.mask=='moeda')moedaAviso(e)});
+   if(e.dataset.mask=='moeda')e.addEventListener('blur',function(){
+     if(e.value){var n2=num(e.value);e.value=mask(n2.toFixed(2).replace('.',','),'moeda');moedaAviso(e)}})});
+ document.querySelectorAll('[data-cep]').forEach(function(e){if(e._c)return;e._c=1;
+   e.addEventListener('input',function(){cep(e)});e.addEventListener('blur',function(){cep(e)})});
+ document.querySelectorAll('input,select,textarea').forEach(function(e){if(e._u)return;e._u=1;e.addEventListener('change',upd)});
+}
+
+function marca(el,txt){var a=el.closest('.op')||el.closest('.esc')||el;a.classList.add('err');var m=document.createElement('div');m.className='msg';m.textContent=txt;a.insertAdjacentElement('afterend',m)}
+function limpa(){document.querySelectorAll('.msg').forEach(function(m){m.remove()});document.querySelectorAll('.err').forEach(function(e){e.classList.remove('err')})}
+
+function escondido(e){
+ var c=e.closest('.c'); if(c&&c.classList.contains('hide'))return true;
+ var fs=e.closest('fieldset'); if(fs&&fs.dataset.etapa!=String(ETAPA))return true;
+ return false}
+function irAoErro(){
+ var e=document.querySelector('.err'); if(!e)return;
+ var fs=e.closest('fieldset'), ps=passos(), i=ps.indexOf(fs);
+ if(i>=0&&i!=PASSO){PASSO=i;passoUpd()}
+ if(e.scrollIntoView)e.scrollIntoView({block:'center'})}
+function valida(){
+ limpa();var erros=0;
+ document.querySelectorAll('[data-req]').forEach(function(e){
+   if(escondido(e))return;
+   var v=(e.type=='radio'||e.type=='checkbox')?!!document.querySelector('[name="'+CSS.escape(e.name)+'"]:checked'):!!e.value;
+   if(!v){marca(e,'Preencha este campo.');erros++}});
+ document.querySelectorAll('[data-chk=cpf]').forEach(function(e){if(e.value&&!cpfOk(e.value)){marca(e,'CPF inválido.');erros++}});
+ document.querySelectorAll('[data-chk=cnpj]').forEach(function(e){if(e.value&&!cnpjOk(e.value)){marca(e,'CNPJ inválido.');erros++}});
+ if(ETAPA==2){var soma=0,achou=false;
+   document.querySelectorAll('[id^="p_participacao__"]').forEach(function(e){if(e.value){achou=true;soma+=num(e.value)*100}});
+   if(achou&&Math.abs(soma-100)>0.01){var p=document.querySelector('[id^="p_participacao__"]');marca(p,'A soma das participações é '+soma.toFixed(2)+'% e precisa ser 100%.');erros++}}
+ return erros}
+
+function coleta(){
+ var pares=[];document.querySelectorAll('input,select,textarea').forEach(function(e){
+   if(e.type=='file'||!e.name||escondido(e))return;
+   if(e.type=='radio'||e.type=='checkbox'){if(e.checked)pares.push([e.name,e.value])}
+   else if(e.value)pares.push([e.name,e.value])});
+ return pares}
+
+document.getElementById('f').addEventListener('submit',function(ev){
+ ev.preventDefault();
+ if(valida()){irAoErro();return}
+ var t=triagem(),b=document.getElementById('bt');b.disabled=true;b.textContent='Enviando...';
+ var corpo={etapa:ETAPA,token:TOKEN,tipo_decidido:TIPO,campos:coleta(),triagem:t,
+   faltando:faltando(),arquivos:[]};
+ var fs=[].slice.call(document.querySelectorAll('input[type=file]')).filter(function(i){return i.files[0]});
+ Promise.all(fs.map(ler)).then(function(as){corpo.arquivos=as.filter(Boolean);
+   if(!ENDPOINT){mostra({ok:true,protocolo:'(teste local)',triagem:t});b.disabled=false;b.textContent='Enviar';return}
+   return fetch(ENDPOINT,{method:'POST',body:JSON.stringify(corpo)}).then(function(r){return r.json()}).then(function(j){mostra(j)})
+ }).catch(function(e){b.disabled=false;b.textContent='Enviar';alert('Não consegui enviar: '+e)})});
+
+function ler(inp){var f=inp.files[0];return new Promise(function(ok,no){
+ if(f.size>8e6){no('O arquivo '+f.name+' passa de 8 MB.');return}
+ var r=new FileReader();r.onload=function(){ok({rotulo:inp.dataset.file,nome:f.name,tipo:f.type,data:r.result.split(',')[1]})};r.onerror=no;r.readAsDataURL(f)})}
+
+function anexoTexto(j){
+ var guardados=(j&&j.arquivos)||null;
+ var locais=[].slice.call(document.querySelectorAll('input[type=file]'))
+   .filter(function(i){return i.files&&i.files[0]}).map(function(i){return i.files[0].name});
+ if(guardados&&guardados.length){
+   return '<p><b>Documentos guardados com este protocolo ('+guardados.length+'):</b><br>'
+     +guardados.map(function(x){return '• '+String(x).replace(/</g,'&lt;')}).join('<br>')+'</p>'}
+ if(locais.length){
+   return '<p><b>Documentos enviados com o pedido ('+locais.length+'):</b><br>'
+     +locais.map(function(x){return '• '+x.replace(/</g,'&lt;')}).join('<br>')
+     +'<br><span class="d">Se algum arquivo não aparecer nesta lista, ele não foi enviado: responda o nosso e-mail com o documento.</span></p>'}
+ return '<p class="d">Nenhum documento foi anexado a este pedido.</p>'}
+function mostra(j){
+ document.getElementById('f').style.display='none';
+ document.getElementById('res').innerHTML= j&&j.ok
+  ? '<div class="ok"><h2>Recebemos o seu pedido</h2><p>Protocolo <b>'+j.protocolo+'</b> — guarde este número.</p>'
+    +anexoTexto(j)
+    +'<p>Conferimos o que você respondeu, verificamos o que o seu caso exige nos órgãos e voltamos pelo e-mail e pelo WhatsApp que você informou, com o passo a passo, o prazo e a lista de documentos que precisam de assinatura.</p>'
+    +'<p>Se faltar alguma informação ou documento, pedimos tudo de uma vez — não em pedaços.</p></div>'
+  : '<div class="ok"><b>Não consegui enviar.</b><br>'+((j&&j.erro)||'')+'</div>';
+ window.scrollTo(0,0)}
+
+document.getElementById('ba').addEventListener('click',function(){
+ if(validaPasso()){irAoErro();return}
+ PASSO++; passoUpd(); window.scrollTo(0,0)});
+document.getElementById('bv').addEventListener('click',function(){PASSO--; passoUpd(); window.scrollTo(0,0)});
+ligar();
+if(document.getElementById('qpes')){document.getElementById('qpes').addEventListener('change',pessoas);pessoas()}
+upd();
+</script></body></html>
