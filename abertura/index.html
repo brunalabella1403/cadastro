@@ -555,6 +555,7 @@ function mostra(j){
  document.getElementById('res').innerHTML= j&&j.ok
   ? '<div class="ok"><h2>Recebemos o seu pedido</h2><p>Protocolo <b>'+j.protocolo+'</b> — guarde este número.</p>'
     +anexoTexto(j)
+    +'<p><b>Respondemos em até 1 dia útil.</b> Esse é o prazo para a nossa resposta, não o prazo do ato em si: o prazo do registro vai junto com a resposta.</p>'
     +'<p>Conferimos o que você respondeu, verificamos o que o seu caso exige nos órgãos e voltamos pelo e-mail e pelo WhatsApp que você informou, com o passo a passo, o prazo e a lista de documentos que precisam de assinatura.</p>'
     +'<p>Se faltar alguma informação ou documento, pedimos tudo de uma vez — não em pedaços.</p></div>'
   : '<div class="ok"><b>Não consegui enviar.</b><br>'+((j&&j.erro)||'')+'</div>';
