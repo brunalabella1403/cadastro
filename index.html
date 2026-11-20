@@ -1,157 +1,73 @@
-<!DOCTYPE html>
-<html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Ficha cadastral — Elpee Contabilidade</title><meta name="robots" content="noindex">
+<!DOCTYPE html><html lang="pt-BR"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Cadastro — Elpee Contabilidade</title>
 <style>
-:root{--az:#00365d;--az2:#1f4c86;--am:#f6c416;--cz:#5a6a7d;--bg:#f3f5f9;--er:#c0392b}
+:root{--az:#013A65;--az2:#1E4B82;--am:#F2C048;--cz:#5a6a7d;--bg:#f3f5f9;--er:#c0392b}
 *{box-sizing:border-box}body{margin:0;background:var(--bg);font-family:Arial,Helvetica,sans-serif;color:#1d2733;font-size:16px}
 .top{background:#fff;border-bottom:4px solid var(--am);padding:18px 16px;display:flex;align-items:center;gap:14px;position:relative;overflow:hidden}
 .top:after{content:"";position:absolute;right:0;top:0;width:170px;height:100%;background:linear-gradient(225deg,var(--az) 0 18%,var(--am) 18% 30%,var(--az2) 30% 52%,transparent 52%)}
 .marca b{display:block;color:var(--az);font-size:30px;line-height:1;letter-spacing:-.5px}.marca small{color:var(--az);letter-spacing:3px;font-weight:bold;font-size:11px}
-.wrap{max-width:720px;margin:0 auto;padding:16px}
-h1{color:var(--az);font-size:22px;margin:6px 0 4px}.intro{color:var(--cz);margin:0 0 12px;line-height:1.45}
-.card{background:#fff;border-radius:10px;padding:16px;margin:12px 0;box-shadow:0 1px 3px rgba(0,0,0,.08);border-top:4px solid var(--az)}
-.card h2{margin:0 0 10px;font-size:18px;color:var(--az)}
-label{display:block;font-weight:bold;margin:12px 0 4px;font-size:15px}label .o{color:var(--er)}
-.dica{font-weight:normal;color:var(--cz);font-size:13px}
+.w{max-width:720px;margin:0 auto;padding:16px}
+h1{color:var(--az);font-size:22px;margin:6px 0 4px}
+.sub{color:var(--cz);margin:0 0 12px;line-height:1.45;font-size:15px}
+fieldset{background:#fff;border:0;border-top:4px solid var(--az);border-radius:10px;padding:16px;margin:12px 0;box-shadow:0 1px 3px rgba(0,0,0,.08)}
+legend{display:block;width:100%;padding:0;margin:0 0 6px;font-size:18px;font-weight:bold;color:var(--az)}
+.c{margin:0}
+label{display:block;font-weight:bold;margin:12px 0 4px;font-size:15px}
 input,select,textarea{width:100%;padding:12px;border:1px solid #c6cfdb;border-radius:8px;font-size:16px;background:#fff}
 input:focus,select:focus,textarea:focus{outline:2px solid var(--am);border-color:var(--az)}
-.row{display:flex;gap:10px}.row>div{flex:1}.row>.p{flex:.45}
-.op{display:flex;flex-wrap:wrap;gap:8px}.op label{font-weight:normal;margin:0;border:1px solid #c6cfdb;border-radius:20px;padding:9px 14px;cursor:pointer;background:#fff}
-.op input{display:none}.op label.on{background:var(--az);color:#fff;border-color:var(--az)}
-.err{border-color:var(--er)!important;background:#fff6f5}.msg{color:var(--er);font-size:13px;margin-top:3px}
-.dep{border:1px dashed #c6cfdb;border-radius:8px;padding:10px;margin-top:10px}
-.hide{display:none}
-button{width:100%;padding:16px;border:0;border-radius:10px;background:var(--az);color:#fff;font-size:18px;font-weight:bold;margin:8px 0 30px}
-button:disabled{opacity:.6}.ok{text-align:center;padding:30px 16px}.ok h2{color:var(--az)}
-.chk{display:flex;gap:10px;align-items:flex-start;font-weight:normal}.chk input{width:22px;height:22px;flex:none;margin-top:2px}
+input[type=file]{padding:9px}
+.op{display:flex;flex-wrap:wrap;gap:8px}
+.op label{font-weight:normal;margin:0;border:1px solid #c6cfdb;border-radius:20px;padding:9px 14px;cursor:pointer;background:#fff}
+.op input{display:none}
+.op label.on{background:var(--az);color:#fff;border-color:var(--az)}
+.op.err label{border-color:var(--er);background:#fff6f5}
+.esc label{display:block;font-weight:bold;border:1px solid #c6cfdb;border-radius:10px;padding:12px 14px;margin:0 0 8px;cursor:pointer;background:#fff}
+.esc label.on{border-color:var(--az);background:#eef3f9;box-shadow:inset 0 0 0 1px var(--az)}
+.esc input{display:none}
+.esc i{display:block;font-weight:normal;font-style:normal;color:var(--cz);font-size:13px;margin-top:5px;line-height:1.4}
+.esc.err label{border-color:var(--er);background:#fff6f5}
+.cep{font-size:13px;color:var(--cz);margin-top:3px}
+.aviso{background:#fff8e1;border:1px solid var(--am);border-radius:8px;padding:12px;font-size:14px;line-height:1.45;margin-top:12px}
+.rev{border-top:1px solid #e1e7ef;padding:10px 0}
+.rev b{display:block;color:var(--az);font-size:15px;margin-bottom:4px}
+.rev dl{margin:0;font-size:14px}.rev dt{color:var(--cz);font-size:13px;margin-top:6px}.rev dd{margin:0}
+.rev button{width:auto;padding:7px 14px;font-size:14px;background:#fff;color:var(--az);border:1px solid var(--az);border-radius:8px;margin-top:8px}
+.d{font-weight:normal;color:var(--cz);font-size:13px;margin-top:3px}
+.o{color:var(--er)}
+.hide{display:none!important}
+.err{border-color:var(--er)!important;background:#fff6f5}
+.msg{color:var(--er);font-size:13px;margin-top:3px}
+button{width:100%;padding:16px;border:0;border-radius:10px;background:var(--az);color:#fff;font-size:18px;font-weight:bold;cursor:pointer}
+button:disabled{opacity:.6}
+button.sec{background:#fff;color:var(--az);border:1px solid var(--az)}
+.nav{display:flex;gap:10px;margin:8px 0 30px}.nav button{flex:1}
+.ok{background:#fff;border-top:4px solid var(--az);border-radius:10px;padding:16px;margin-top:12px;box-shadow:0 1px 3px rgba(0,0,0,.08)}
+.ok h2{color:var(--az);margin:0 0 8px;font-size:18px}
+.priv{font-size:13px;color:var(--cz);margin-top:10px;line-height:1.45}
+.prog{font-size:13px;color:var(--az);font-weight:bold;margin:0}
+.barra{height:6px;background:#e1e7ef;border-radius:3px;margin:6px 0 2px;overflow:hidden}
+.barra i{display:block;height:100%;background:var(--am);transition:width .2s}
+
+.menu a{display:block;text-decoration:none;background:#fff;border:0;border-top:4px solid var(--az);border-radius:10px;padding:16px;margin:12px 0;box-shadow:0 1px 3px rgba(0,0,0,.08)}
+.menu b{display:block;color:var(--az);font-size:18px}
+.menu span{display:block;color:var(--cz);font-size:14px;line-height:1.45;margin-top:5px}
+.menu a:active{background:#eef3f9}
+.rod{color:var(--cz);font-size:13px;line-height:1.5;margin:22px 0 30px}
 </style></head><body>
-<div class="top"><svg width="54" height="54" viewBox="0 0 54 54"><path d="M27 4a23 23 0 1 0 22 30" fill="none" stroke="#00365d" stroke-width="6"/><rect x="15" y="22" width="7" height="14" fill="#f6c416"/><rect x="24" y="16" width="7" height="20" fill="#f6c416"/><rect x="33" y="8" width="7" height="28" fill="#f6c416"/></svg>
+<div class="top"><svg width="54" height="54" viewBox="0 0 112 112" role="img" aria-label="Elpee Contabilidade"><g transform="translate(6.00,6.00) scale(1.0000)"><path d="M37.99,6.80 L37.97,6.61 L37.94,6.41 L37.90,6.22 L37.84,6.04 L37.77,5.85 L37.69,5.67 L37.60,5.50 L37.49,5.33 L37.38,5.17 L37.26,5.02 L37.12,4.88 L36.98,4.74 L36.83,4.62 L36.67,4.51 L36.50,4.40 L36.33,4.31 L36.15,4.23 L35.96,4.16 L35.78,4.10 L35.59,4.06 L35.39,4.03 L35.20,4.01 L35.00,4.00 L19.00,4.00 L18.80,4.01 L18.61,4.03 L18.41,4.06 L18.22,4.10 L18.04,4.16 L17.85,4.23 L17.67,4.31 L17.50,4.40 L17.33,4.51 L17.17,4.62 L17.02,4.74 L16.88,4.88 L16.74,5.02 L16.62,5.17 L16.51,5.33 L16.40,5.50 L16.31,5.67 L16.23,5.85 L16.16,6.04 L16.10,6.22 L16.06,6.41 L16.03,6.61 L16.01,6.80 L16.00,7.00 L16.00,77.00 L16.00,93.00 L16.01,93.20 L16.03,93.39 L16.06,93.59 L16.10,93.78 L16.16,93.96 L16.23,94.15 L16.31,94.33 L16.40,94.50 L16.51,94.67 L16.62,94.83 L16.74,94.98 L16.88,95.12 L17.02,95.26 L17.17,95.38 L17.33,95.49 L17.50,95.60 L17.67,95.69 L17.85,95.77 L18.04,95.84 L18.22,95.90 L18.41,95.94 L18.61,95.97 L18.80,95.99 L19.00,96.00 L35.00,96.00 L83.00,96.00 L83.20,95.99 L83.39,95.97 L83.59,95.94 L83.78,95.90 L83.96,95.84 L84.15,95.77 L84.33,95.69 L84.50,95.60 L84.67,95.49 L84.83,95.38 L84.98,95.26 L85.12,95.12 L85.26,94.98 L85.38,94.83 L85.49,94.67 L85.60,94.50 L85.69,94.33 L85.77,94.15 L85.84,93.96 L85.90,93.78 L85.94,93.59 L85.97,93.39 L85.99,93.20 L86.00,93.00 L86.00,77.00 L85.99,76.80 L85.97,76.61 L85.94,76.41 L85.90,76.22 L85.84,76.04 L85.77,75.85 L85.69,75.67 L85.60,75.50 L85.49,75.33 L85.38,75.17 L85.26,75.02 L85.12,74.88 L84.98,74.74 L84.83,74.62 L84.67,74.51 L84.50,74.40 L84.33,74.31 L84.15,74.23 L83.96,74.16 L83.78,74.10 L83.59,74.06 L83.39,74.03 L83.20,74.01 L83.00,74.00 L38.00,74.00 L38.00,7.00 L37.99,6.80Z" fill="#013A65" fill-rule="evenodd"/><path d="M56.46,60.00 L56.92,59.99 L57.37,59.97 L57.83,59.94 L58.29,59.91 L58.74,59.87 L59.20,59.82 L59.65,59.76 L60.11,59.70 L60.56,59.63 L61.01,59.55 L61.46,59.46 L61.91,59.37 L62.36,59.27 L62.80,59.16 L63.25,59.05 L63.69,58.92 L64.13,58.79 L64.57,58.66 L65.00,58.51 L65.43,58.36 L65.86,58.21 L66.29,58.04 L66.72,57.87 L67.14,57.69 L67.56,57.50 L67.97,57.31 L68.38,57.11 L68.79,56.91 L69.20,56.69 L69.60,56.47 L70.00,56.25 L70.39,56.02 L70.79,55.78 L71.17,55.53 L71.56,55.28 L71.93,55.02 L72.31,54.76 L72.68,54.49 L73.05,54.21 L73.41,53.93 L73.76,53.64 L74.11,53.35 L74.46,53.05 L74.80,52.75 L75.14,52.44 L75.47,52.12 L75.80,51.80 L76.12,51.47 L76.44,51.14 L76.75,50.80 L77.05,50.46 L77.35,50.11 L77.64,49.76 L77.93,49.41 L78.21,49.05 L78.49,48.68 L78.76,48.31 L79.02,47.93 L79.28,47.56 L79.53,47.17 L79.78,46.79 L80.02,46.39 L80.25,46.00 L80.47,45.60 L80.69,45.20 L80.91,44.79 L81.11,44.38 L81.31,43.97 L81.50,43.56 L81.69,43.14 L81.87,42.72 L82.04,42.29 L82.21,41.86 L82.36,41.43 L82.51,41.00 L82.66,40.57 L82.79,40.13 L82.92,39.69 L83.05,39.25 L83.16,38.80 L83.27,38.36 L83.37,37.91 L83.46,37.46 L83.55,37.01 L83.63,36.56 L83.70,36.11 L83.76,35.65 L83.82,35.20 L83.87,34.74 L83.91,34.29 L83.94,33.83 L83.97,33.37 L83.99,32.92 L84.00,32.46 L84.00,32.00 L84.00,31.54 L83.99,31.08 L83.97,30.63 L83.94,30.17 L83.91,29.71 L83.87,29.26 L83.82,28.80 L83.76,28.35 L83.70,27.89 L83.63,27.44 L83.55,26.99 L83.46,26.54 L83.37,26.09 L83.27,25.64 L83.16,25.20 L83.05,24.75 L82.92,24.31 L82.79,23.87 L82.66,23.43 L82.51,23.00 L82.36,22.57 L82.21,22.14 L82.04,21.71 L81.87,21.28 L81.69,20.86 L81.50,20.44 L81.31,20.03 L81.11,19.62 L80.91,19.21 L80.69,18.80 L80.47,18.40 L80.25,18.00 L80.02,17.61 L79.78,17.21 L79.53,16.83 L79.28,16.44 L79.02,16.07 L78.76,15.69 L78.49,15.32 L78.21,14.95 L77.93,14.59 L77.64,14.24 L77.35,13.89 L77.05,13.54 L76.75,13.20 L76.44,12.86 L76.12,12.53 L75.80,12.20 L75.47,11.88 L75.14,11.56 L74.80,11.25 L74.46,10.95 L74.11,10.65 L73.76,10.36 L73.41,10.07 L73.05,9.79 L72.68,9.51 L72.31,9.24 L71.93,8.98 L71.56,8.72 L71.17,8.47 L70.79,8.22 L70.39,7.98 L70.00,7.75 L69.60,7.53 L69.20,7.31 L68.79,7.09 L68.38,6.89 L67.97,6.69 L67.56,6.50 L67.14,6.31 L66.72,6.13 L66.29,5.96 L65.86,5.79 L65.43,5.64 L65.00,5.49 L64.57,5.34 L64.13,5.21 L63.69,5.08 L63.25,4.95 L62.80,4.84 L62.36,4.73 L61.91,4.63 L61.46,4.54 L61.01,4.45 L60.56,4.37 L60.11,4.30 L59.65,4.24 L59.20,4.18 L58.74,4.13 L58.29,4.09 L57.83,4.06 L57.37,4.03 L56.92,4.01 L56.46,4.00 L56.00,4.00 L38.00,4.00 L38.00,10.55 L38.00,16.00 L56.00,16.00 L56.26,16.00 L56.52,16.01 L56.79,16.02 L57.05,16.03 L57.31,16.05 L57.57,16.08 L57.83,16.10 L58.09,16.14 L58.35,16.17 L58.61,16.21 L58.86,16.26 L59.12,16.31 L59.38,16.36 L59.63,16.42 L59.89,16.48 L60.14,16.55 L60.39,16.62 L60.64,16.69 L60.89,16.77 L61.14,16.85 L61.39,16.94 L61.64,17.03 L61.88,17.12 L62.12,17.22 L62.36,17.32 L62.60,17.43 L62.84,17.54 L63.08,17.65 L63.31,17.77 L63.54,17.89 L63.77,18.01 L64.00,18.14 L64.23,18.28 L64.45,18.41 L64.67,18.55 L64.89,18.70 L65.11,18.84 L65.32,18.99 L65.53,19.15 L65.74,19.31 L65.95,19.47 L66.15,19.63 L66.35,19.80 L66.55,19.97 L66.74,20.14 L66.94,20.32 L67.13,20.50 L67.31,20.69 L67.50,20.87 L67.68,21.06 L67.86,21.26 L68.03,21.45 L68.20,21.65 L68.37,21.85 L68.53,22.05 L68.69,22.26 L68.85,22.47 L69.01,22.68 L69.16,22.89 L69.30,23.11 L69.45,23.33 L69.59,23.55 L69.72,23.77 L69.86,24.00 L69.99,24.23 L70.11,24.46 L70.23,24.69 L70.35,24.92 L70.46,25.16 L70.57,25.40 L70.68,25.64 L70.78,25.88 L70.88,26.12 L70.97,26.36 L71.06,26.61 L71.15,26.86 L71.23,27.11 L71.31,27.36 L71.38,27.61 L71.45,27.86 L71.52,28.11 L71.58,28.37 L71.64,28.62 L71.69,28.88 L71.74,29.14 L71.79,29.39 L71.83,29.65 L71.86,29.91 L71.90,30.17 L71.92,30.43 L71.95,30.69 L71.97,30.95 L71.98,31.21 L71.99,31.48 L72.00,31.74 L72.00,32.00 L72.00,32.26 L71.99,32.52 L71.98,32.79 L71.97,33.05 L71.95,33.31 L71.92,33.57 L71.90,33.83 L71.86,34.09 L71.83,34.35 L71.79,34.61 L71.74,34.86 L71.69,35.12 L71.64,35.38 L71.58,35.63 L71.52,35.89 L71.45,36.14 L71.38,36.39 L71.31,36.64 L71.23,36.89 L71.15,37.14 L71.06,37.39 L70.97,37.64 L70.88,37.88 L70.78,38.12 L70.68,38.36 L70.57,38.60 L70.46,38.84 L70.35,39.08 L70.23,39.31 L70.11,39.54 L69.99,39.77 L69.86,40.00 L69.72,40.23 L69.59,40.45 L69.45,40.67 L69.30,40.89 L69.16,41.11 L69.01,41.32 L68.85,41.53 L68.69,41.74 L68.53,41.95 L68.37,42.15 L68.20,42.35 L68.03,42.55 L67.86,42.74 L67.68,42.94 L67.50,43.13 L67.31,43.31 L67.13,43.50 L66.94,43.68 L66.74,43.86 L66.55,44.03 L66.35,44.20 L66.15,44.37 L65.95,44.53 L65.74,44.69 L65.53,44.85 L65.32,45.01 L65.11,45.16 L64.89,45.30 L64.67,45.45 L64.45,45.59 L64.23,45.72 L64.00,45.86 L63.77,45.99 L63.54,46.11 L63.31,46.23 L63.08,46.35 L62.84,46.46 L62.60,46.57 L62.36,46.68 L62.12,46.78 L61.88,46.88 L61.64,46.97 L61.39,47.06 L61.14,47.15 L60.89,47.23 L60.64,47.31 L60.39,47.38 L60.14,47.45 L59.89,47.52 L59.63,47.58 L59.38,47.64 L59.12,47.69 L58.86,47.74 L58.61,47.79 L58.35,47.83 L58.09,47.86 L57.83,47.90 L57.57,47.92 L57.31,47.95 L57.05,47.97 L56.79,47.98 L56.52,47.99 L56.26,48.00 L56.00,48.00 L38.00,48.00 L38.00,53.45 L38.00,60.00 L56.00,60.00 L56.46,60.00Z" fill="#F2C048" fill-rule="evenodd"/></g></svg>
 <div class="marca"><b>Elpee</b><small>CONTABILIDADE</small></div></div>
-<div class="wrap" id="app">
-<h1>Ficha cadastral</h1>
-<p class="intro">Olá! Esta ficha serve para cadastrarmos quem vai receber pela sua empresa: sócio (pró-labore), funcionário registrado ou profissional autônomo (RPA). Leva poucos minutos. Os campos com <b style="color:#c0392b">*</b> são obrigatórios.</p>
-<form id="f" novalidate>
-
-<div class="card"><h2>Quem está sendo cadastrado?</h2>
-<div class="op" data-name="Tipo" data-req="1"><label><input type="radio" name="Tipo" value="Sócio (pró-labore)">Sócio (pró-labore)</label><label><input type="radio" name="Tipo" value="Empregado (carteira assinada)">Empregado (carteira assinada)</label><label><input type="radio" name="Tipo" value="Autônomo (RPA)">Autônomo (RPA)</label></div>
-<label>Nome da empresa que vai pagar <span class="o">*</span></label><input name="Empresa" data-req="1">
-<label>CNPJ da empresa <span class="o">*</span></label><input name="CNPJ empresa" data-mask="00.000.000/0000-00" data-chk="cnpj" inputmode="numeric" data-req="1"></div>
-
-<div class="card hide" data-show="Tipo=Sócio (pró-labore)"><h2>Sócio — pró-labore</h2>
-<label>Recebe pró-labore a partir de <span class="o">*</span></label><input type="date" name="Início pró-labore" data-req="1">
-<label>Valor mensal do pró-labore <span class="o">*</span></label><input name="Valor pró-labore" data-money="1" inputmode="numeric" placeholder="R$ 0,00" data-req="1"></div>
-
-<div class="card hide" data-show="Tipo=Empregado (carteira assinada)"><h2>Empregado</h2>
-<label>Data de admissão <span class="o">*</span></label><input type="date" name="Admissão" data-req="1">
-<label>Cargo ou função <span class="o">*</span></label><input name="Cargo" data-req="1">
-<label>Salário mensal <span class="o">*</span></label><input name="Salário" data-money="1" inputmode="numeric" placeholder="R$ 0,00" data-req="1">
-<div class="row"><div><label>Entrada <span class="o">*</span></label><input type="time" name="Hora entrada" data-req="1"></div><div><label>Saída <span class="o">*</span></label><input type="time" name="Hora saída" data-req="1"></div></div>
-<div class="row"><div><label>Início do intervalo</label><input type="time" name="Intervalo início"></div><div><label>Fim do intervalo</label><input type="time" name="Intervalo fim"></div></div>
-<label>Dias de trabalho <span class="o">*</span></label><select name="Dias de trabalho" data-req="1"><option value="">Selecione</option><option>Segunda a sexta</option><option>Segunda a sábado</option><option>Escala 12x36</option><option>Outro</option></select>
-<label>Vai usar vale-transporte? <span class="o">*</span></label><div class="op" data-name="Vale-transporte" data-req="1"><label><input type="radio" name="Vale-transporte" value="Sim">Sim</label><label><input type="radio" name="Vale-transporte" value="Não">Não</label></div></div>
-
-<div class="card hide" data-show="Tipo=Autônomo (RPA)"><h2>Autônomo (RPA)</h2>
-<label>Qual serviço foi prestado? <span class="o">*</span></label><textarea name="Serviço" rows="2" data-req="1"></textarea>
-<label>Valor do serviço <span class="o">*</span></label><input name="Valor serviço" data-money="1" inputmode="numeric" placeholder="R$ 0,00" data-req="1">
-<label>Data do pagamento <span class="o">*</span></label><input type="date" name="Data pagamento" data-req="1">
-<label>Tem inscrição na Prefeitura (CCM)? <span class="dica">(autônomos)</span> <span class="o">*</span></label><div class="op" data-name="Tem CCM" data-req="1"><label><input type="radio" name="Tem CCM" value="Sim">Sim</label><label><input type="radio" name="Tem CCM" value="Não">Não</label></div>
-<div class="hide" data-show="Tem CCM=Sim"><label>Número do CCM <span class="o">*</span></label><input name="CCM" inputmode="numeric" data-req="1"></div></div>
-
-<div class="card"><h2>Dados pessoais</h2>
-<label>Nome completo (como no documento) <span class="o">*</span></label><input name="Nome civil" data-req="1" autocomplete="name">
-<label>Nome social <span class="dica">(se usar)</span></label><input name="Nome social">
-<label>CPF <span class="o">*</span></label><input name="CPF" data-mask="000.000.000-00" data-chk="cpf" inputmode="numeric" data-req="1">
-<label>Documento de identidade <span class="o">*</span></label><div class="op" data-name="Tipo documento" data-req="1"><label><input type="radio" name="Tipo documento" value="RG">RG</label><label><input type="radio" name="Tipo documento" value="CNH">CNH</label><label><input type="radio" name="Tipo documento" value="RNM/RNE (estrangeiro)">RNM/RNE (estrangeiro)</label></div>
-<div class="row"><div><label>Número do documento <span class="o">*</span></label><input name="Número documento" data-req="1" style="text-transform:uppercase"></div><div class="p"><label>Órgão emissor <span class="o">*</span></label><input name="Órgão emissor" data-req="1" placeholder="SSP" style="text-transform:uppercase"></div></div>
-<div class="row"><div><label>UF emissora <span class="o">*</span></label><select name="UF emissor" data-uf="1" data-req="1"></select></div><div><label>Data de emissão</label><input type="date" name="Emissão documento"></div></div>
-<label>Data de nascimento <span class="o">*</span></label><input type="date" name="Nascimento" data-req="1">
-<label>Sexo <span class="o">*</span></label><div class="op" data-name="Sexo" data-req="1"><label><input type="radio" name="Sexo" value="Feminino">Feminino</label><label><input type="radio" name="Sexo" value="Masculino">Masculino</label></div>
-<label>Raça/cor <span class="o">*</span></label><select name="Raça/cor" data-req="1"><option value="">Selecione</option><option>Branca</option><option>Preta</option><option>Parda</option><option>Amarela</option><option>Indígena</option><option>Prefiro não informar</option></select>
-<label>Estado civil <span class="o">*</span></label><select name="Estado civil" data-req="1"><option value="">Selecione</option><option>Solteiro(a)</option><option>Casado(a)</option><option>União estável</option><option>Divorciado(a)</option><option>Separado(a)</option><option>Viúvo(a)</option></select>
-<label>Escolaridade <span class="o">*</span></label><select name="Escolaridade" data-req="1"><option value="">Selecione</option><option>Fundamental incompleto</option><option>Fundamental completo</option><option>Médio incompleto</option><option>Médio completo</option><option>Superior incompleto</option><option>Superior completo</option><option>Pós-graduação</option></select>
-<label>Nacionalidade <span class="o">*</span></label><div class="op" data-name="Nacionalidade" data-req="1"><label><input type="radio" name="Nacionalidade" value="Brasileira">Brasileira</label><label><input type="radio" name="Nacionalidade" value="Estrangeira">Estrangeira</label></div>
-<div class="hide" data-show="Nacionalidade=Estrangeira"><label>País de nacionalidade <span class="o">*</span></label><input name="País" list="paises" data-req="1"><label>Data de chegada ao Brasil <span class="o">*</span></label><input type="date" name="Chegada ao Brasil" data-req="1"></div>
-<div class="hide" data-show="Nacionalidade=Brasileira"><div class="row"><div class="p"><label>UF onde nasceu <span class="o">*</span></label><select name="UF nascimento" data-uf="1" data-req="1"></select></div><div><label>Cidade onde nasceu <span class="o">*</span></label><input name="Cidade nascimento" data-req="1"></div></div></div>
-<label>Nome da mãe <span class="o">*</span></label><input name="Mãe" data-req="1">
-<label>Nome do pai</label><input name="Pai">
-<label>PIS/NIT <span class="o">*</span> <span class="dica">(app Meu INSS ou carteira de trabalho digital)</span></label><input name="PIS/NIT" data-mask="000.00000.00-0" data-chk="pis" inputmode="numeric" data-req="1">
-<label>Pessoa com deficiência? <span class="o">*</span></label><div class="op" data-name="PcD" data-req="1"><label><input type="radio" name="PcD" value="Não">Não</label><label><input type="radio" name="PcD" value="Sim">Sim</label></div>
-<div class="hide" data-show="PcD=Sim"><label>Tipo de deficiência <span class="o">*</span></label><select name="Tipo deficiência" data-req="1"><option value="">Selecione</option><option>Física</option><option>Auditiva</option><option>Visual</option><option>Intelectual</option><option>Mental</option><option>Mais de uma</option></select></div>
-<label>Tem registro em conselho profissional? <span class="o">*</span> <span class="dica">(ex.: CRECI, CRC, OAB)</span></label><div class="op" data-name="Conselho" data-req="1"><label><input type="radio" name="Conselho" value="Não">Não</label><label><input type="radio" name="Conselho" value="Sim">Sim</label></div>
-<div class="hide" data-show="Conselho=Sim"><div class="row"><div><label>Conselho <span class="o">*</span></label><input name="Conselho sigla" placeholder="CRECI" data-req="1" style="text-transform:uppercase"></div><div><label>Número <span class="o">*</span></label><input name="Conselho número" data-req="1"></div><div class="p"><label>UF <span class="o">*</span></label><select name="Conselho UF" data-uf="1" data-req="1"></select></div></div></div></div>
-
-<div class="card"><h2>Endereço e contato</h2>
-<label>CEP <span class="o">*</span> <span class="dica">(preenche o endereço sozinho)</span></label><input name="CEP" data-mask="00000-000" inputmode="numeric" data-req="1" id="cep">
-<label>Rua / Avenida <span class="o">*</span></label><input name="Logradouro" data-req="1">
-<div class="row"><div class="p"><label>Número <span class="o">*</span></label><input name="Número" data-req="1"></div><div><label>Complemento</label><input name="Complemento"></div></div>
-<label>Bairro <span class="o">*</span></label><input name="Bairro" data-req="1">
-<div class="row"><div><label>Cidade <span class="o">*</span></label><input name="Cidade" data-req="1"></div><div class="p"><label>UF <span class="o">*</span></label><select name="UF" data-uf="1" data-req="1"></select></div></div>
-<label>Celular com DDD <span class="o">*</span></label><input name="Celular" data-mask="+55 (00) 00000-0000" inputmode="numeric" data-req="1" placeholder="+55 (11) 99999-5555">
-<label>E-mail</label><input type="email" name="E-mail" autocomplete="email"></div>
-
-<div class="card"><h2>INSS em outro lugar</h2><p class="intro">Se a pessoa já paga INSS em outra empresa ou pelo carnê no mesmo mês, o desconto aqui pode ser menor.</p>
-<label>Paga INSS em outro lugar no mesmo mês? <span class="o">*</span></label><div class="op" data-name="INSS outra fonte" data-req="1"><label><input type="radio" name="INSS outra fonte" value="Não">Não</label><label><input type="radio" name="INSS outra fonte" value="Sim, como empregado">Sim, como empregado</label><label><input type="radio" name="INSS outra fonte" value="Sim, como sócio">Sim, como sócio</label><label><input type="radio" name="INSS outra fonte" value="Sim, como autônomo">Sim, como autônomo</label><label><input type="radio" name="INSS outra fonte" value="Sim, pelo carnê (GPS)">Sim, pelo carnê</label></div>
-<div class="hide" data-show="INSS outra fonte=!Não"><label>Nome da outra empresa (ou "carnê") <span class="o">*</span></label><input name="Outra fonte nome" data-req="1">
-<label>CNPJ da outra empresa <span class="dica">(se for empresa)</span></label><input name="Outra fonte CNPJ" data-mask="00.000.000/0000-00" data-chk="cnpj" inputmode="numeric">
-<label>Quanto recebe lá no mês <span class="o">*</span></label><input name="Outra fonte remuneração" data-money="1" inputmode="numeric" placeholder="R$ 0,00" data-req="1">
-<div class="hide" data-show="INSS outra fonte=Sim, pelo carnê (GPS)"><label>Plano do carnê <span class="o">*</span></label><select name="Plano carnê" id="plano" data-req="1"><option value="">Selecione</option><option value="20">Normal (20%)</option><option value="11">Simplificado (11%)</option><option value="5">Baixa renda (5%)</option><option value="?">Não sei</option></select></div><label>INSS pago lá no mês <span class="dica">(calculado automaticamente)</span></label><input name="Outra fonte INSS calculado" id="inssCalc" readonly style="background:#eef2f7"><label>Comprovante da outra fonte <span class="dica">(holerite, recibo ou guia, se tiver)</span></label><input type="file" data-file="Comprovante outra fonte" accept="image/*,application/pdf"></div></div>
-
-<div class="card"><h2>Dependentes para o Imposto de Renda</h2>
-<label>Quantos dependentes? <span class="o">*</span></label><select id="qdep" name="Qtd dependentes" data-req="1"><option value="0">Nenhum</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option></select>
-<div id="deps"></div></div>
-
-<div class="card"><h2>Dados para pagamento</h2>
-<label>Forma de pagamento <span class="o">*</span></label><div class="op" data-name="Forma pagamento" data-req="1"><label><input type="radio" name="Forma pagamento" value="PIX">PIX</label><label><input type="radio" name="Forma pagamento" value="Transferência">Transferência</label></div>
-<div class="hide" data-show="Forma pagamento=PIX"><label>Tipo de chave <span class="o">*</span></label><select name="Tipo chave PIX" data-req="1"><option value="">Selecione</option><option>CPF</option><option>Celular</option><option>E-mail</option><option>Chave aleatória</option></select><label>Chave PIX <span class="o">*</span></label><input name="Chave PIX" data-req="1"></div>
-<div class="hide" data-show="Forma pagamento=Transferência"><label>Banco <span class="o">*</span></label><select name="Banco" data-req="1"><option value="">Selecione</option><option>Banco do Brasil</option><option>Bradesco</option><option>Caixa</option><option>Itaú</option><option>Santander</option><option>Inter</option><option>Nubank</option><option>C6</option><option>Sicredi</option><option>Sicoob</option><option>Outro</option></select>
-<div class="row"><div><label>Agência <span class="o">*</span></label><input name="Agência" inputmode="numeric" data-req="1"></div><div><label>Conta com dígito <span class="o">*</span></label><input name="Conta" data-req="1"></div></div>
-<label>Tipo de conta <span class="o">*</span></label><select name="Tipo conta" data-req="1"><option value="">Selecione</option><option>Corrente</option><option>Poupança</option><option>Salário</option></select></div></div>
-
-<div class="card"><h2>Fotos dos documentos</h2><p class="intro">Pode tirar foto com o celular. Aceita foto ou PDF.</p>
-<label>Documento de identidade — frente <span class="o">*</span></label><input type="file" data-file="Documento frente" accept="image/*,application/pdf" data-req="1">
-<label>Documento de identidade — verso</label><input type="file" data-file="Documento verso" accept="image/*,application/pdf">
-<label>Comprovante de endereço <span class="o">*</span></label><input type="file" data-file="Comprovante endereço" accept="image/*,application/pdf" data-req="1">
-<div class="hide" data-show="Conselho=Sim"><label>Carteira do conselho profissional</label><input type="file" data-file="Carteira conselho" accept="image/*,application/pdf"></div></div>
-
-<div class="card"><label class="chk"><input type="checkbox" name="LGPD" value="Concordo" data-req="1"><span>Confirmo que as informações são verdadeiras e autorizo o uso apenas para folha de pagamento, eSocial e Receita Federal (Lei 13.709/2018 — LGPD). <span class="o">*</span></span></label></div>
-<button type="submit" id="bt">Enviar ficha</button>
-</form></div>
-<datalist id="paises"><option>Angola</option><option>Argentina</option><option>Bolívia</option><option>Cabo Verde</option><option>Chile</option><option>China</option><option>Colômbia</option><option>Coreia do Sul</option><option>Cuba</option><option>Equador</option><option>Espanha</option><option>Estados Unidos</option><option>França</option><option>Haiti</option><option>Itália</option><option>Japão</option><option>Líbano</option><option>México</option><option>Moçambique</option><option>Paraguai</option><option>Peru</option><option>Portugal</option><option>Reino Unido</option><option>Senegal</option><option>Síria</option><option>Uruguai</option><option>Venezuela</option></datalist>
-<script>
-var UF='AC AL AP AM BA CE DF ES GO MA MT MS MG PA PB PR PE PI RJ RN RS RO RR SC SP SE TO'.split(' ');
-document.querySelectorAll('[data-uf]').forEach(function(s){s.innerHTML='<option value="">UF</option>'+UF.map(function(u){return '<option>'+u+'</option>'}).join('')});
-function dig(v){return (v||'').replace(/\D/g,'')}
-function mask(v,m){var d=dig(v),o='',i=0;if(m.indexOf('+55')==0){if(d.indexOf('55')==0)d=d.slice(2);}for(var k=0;k<m.length&&i<d.length;k++){var c=m[k];if(c=='0'){o+=d[i++]}else{o+=c}}if(m.indexOf('+55')==0&&o.length&&o.indexOf('+55')!=0)o='+55 ('+o;return o}
-function money(v){var d=dig(v);if(!d)return'';d=(parseInt(d,10)/100).toFixed(2);var p=d.split('.');return 'R$ '+p[0].replace(/\B(?=(\d{3})+(?!\d))/g,'.')+','+p[1]}
-function cpfOk(c){c=dig(c);if(c.length!=11||/^(\d)\1+$/.test(c))return false;for(var t=9;t<11;t++){var s=0;for(var i=0;i<t;i++)s+=c[i]*(t+1-i);if(((10*s)%11)%10!=c[t])return false}return true}
-function cnpjOk(c){c=dig(c);if(c.length!=14||/^(\d)\1+$/.test(c))return false;var w=[6,5,4,3,2,9,8,7,6,5,4,3,2];for(var t=12;t<14;t++){var s=0;for(var i=0;i<t;i++)s+=c[i]*w[i+13-t];var r=s%11;if((r<2?0:11-r)!=c[t])return false}return true}
-function pisOk(c){c=dig(c);if(c.length!=11||/^(\d)\1+$/.test(c))return false;var w=[3,2,9,8,7,6,5,4,3,2],s=0;for(var i=0;i<10;i++)s+=c[i]*w[i];var r=11-s%11;if(r>9)r=0;return r==c[10]}
-var CHK={cpf:[cpfOk,'CPF inválido'],cnpj:[cnpjOk,'CNPJ inválido'],pis:[pisOk,'PIS/NIT inválido']};
-document.addEventListener('input',function(e){var t=e.target;if(t.dataset.mask){if(t.dataset.mask.indexOf('+55')==0){var d=dig(t.value);if(d.indexOf('55')==0)d=d.slice(2);t.value=d?mask(d,'(00) 00000-0000').replace(/^/,'+55 '):''}else t.value=mask(t.value,t.dataset.mask)}if(t.dataset.money)t.value=money(t.value);if(t.name=='Número documento'){var td=val('Tipo documento');if(td=='RG'&&/^\d/.test(t.value)){var r=t.value.toUpperCase().replace(/[^0-9X]/g,'');t.value=r.length==9?r.replace(/^(\d{2})(\d{3})(\d{3})(.)$/,'$1.$2.$3-$4'):r}}t.classList.remove('err');var m=t.parentNode.querySelector('.msg');if(m)m.remove()});
-function val(n){var r=document.querySelector('[name="'+n+'"]:checked');if(r)return r.value;var e=document.querySelector('[name="'+n+'"]:not([type=radio]):not([type=checkbox])');return e?e.value:''}
-function vis(el){return el.offsetParent!==null}
-function upd(){document.querySelectorAll('.op').forEach(function(o){o.querySelectorAll('label').forEach(function(l){l.classList.toggle('on',l.querySelector('input').checked)})});document.querySelectorAll('[data-show]').forEach(function(b){var p=b.dataset.show.split('='),v=val(p[0]),s=p[1].charAt(0)=='!'?(v&&v!=p[1].slice(1)):v==p[1];b.classList.toggle('hide',!s)})}
-document.addEventListener('change',function(e){upd();if(e.target.id=='qdep')deps()});upd();
-
-var TETO=8475.55,SM=1621.00,FX=[[1621.00,.075],[2902.84,.09],[4354.27,.12],[8475.55,.14]];
-function num(v){var d=dig(v);return d?parseInt(d,10)/100:0}
-function brl(x){return 'R$ '+x.toFixed(2).replace('.',',').replace(/\B(?=(\d{3})+(?!\d))/g,'.')}
-function calcINSS(){var o=document.getElementById('inssCalc');if(!o)return;var m=val('INSS outra fonte'),r=num(val('Outra fonte remuneração')),v=null;
-if(m=='Sim, como empregado'&&r){var b=Math.min(r,TETO),ant=0;v=0;FX.forEach(function(f){if(b>ant){v+=(Math.min(b,f[0])-ant)*f[1];ant=f[0]}})}
-else if((m=='Sim, como sócio'||m=='Sim, como autônomo')&&r){v=Math.min(r,TETO)*.11}
-else if(m=='Sim, pelo carnê (GPS)'){var p=document.getElementById('plano').value;if(p=='20'&&r)v=Math.min(r,TETO)*.20;else if(p=='11'||p=='5')v=SM*(+p)/100}
-o.value=v==null?'':brl(Math.round(v*100)/100)}
-document.addEventListener('input',calcINSS);document.addEventListener('change',calcINSS);
-function deps(){var n=+document.getElementById('qdep').value,h='';for(var i=1;i<=n;i++){h+='<div class="dep"><b>Dependente '+i+'</b><label>Nome completo <span class="o">*</span></label><input name="Dep'+i+' nome" data-req="1"><div class="row"><div><label>CPF <span class="o">*</span></label><input name="Dep'+i+' CPF" data-mask="000.000.000-00" data-chk="cpf" inputmode="numeric" data-req="1"></div><div><label>Nascimento <span class="o">*</span></label><input type="date" name="Dep'+i+' nascimento" data-req="1"></div></div><label>Parentesco <span class="o">*</span></label><select name="Dep'+i+' parentesco" data-req="1"><option value="">Selecione</option><option>Filho(a) ou enteado(a)</option><option>Cônjuge</option><option>Companheiro(a)</option><option>Pai ou mãe</option><option>Outro</option></select></div>'}document.getElementById('deps').innerHTML=h}
-document.getElementById('cep').addEventListener('input',function(){var c=dig(this.value);if(c.length==8){fetch('https://viacep.com.br/ws/'+c+'/json/').then(function(r){return r.json()}).then(function(j){if(j.erro)return;var f=function(n,v){var e=document.querySelector('[name="'+n+'"]');if(v&&e&&!e.value)e.value=v};f('Logradouro',j.logradouro);f('Bairro',j.bairro);f('Cidade',j.localidade);document.querySelector('[name="UF"]').value=j.uf||'';document.querySelector('[name="Número"]').focus()}).catch(function(){})}});
-function marca(el,txt){el.classList.add('err');var m=document.createElement('div');m.className='msg';m.textContent=txt;(el.closest('.op')||el).insertAdjacentElement('afterend',m)}
-function lerArq(inp){var f=inp.files[0];if(!f)return Promise.resolve(null);return new Promise(function(ok,no){if(f.type.indexOf('image/')==0){var img=new Image(),u=URL.createObjectURL(f);img.onload=function(){var k=Math.min(1,1800/Math.max(img.width,img.height)),c=document.createElement('canvas');c.width=img.width*k;c.height=img.height*k;c.getContext('2d').drawImage(img,0,0,c.width,c.height);ok({rotulo:inp.dataset.file,nome:f.name.replace(/\.\w+$/,'')+'.jpg',tipo:'image/jpeg',data:c.toDataURL('image/jpeg',.85).split(',')[1]})};img.onerror=no;img.src=u}else{if(f.size>8e6){no('O arquivo '+f.name+' passa de 8 MB.');return}var r=new FileReader();r.onload=function(){ok({rotulo:inp.dataset.file,nome:f.name,tipo:f.type,data:r.result.split(',')[1]})};r.onerror=no;r.readAsDataURL(f)}})}
-document.getElementById('f').addEventListener('submit',function(e){e.preventDefault();document.querySelectorAll('.msg').forEach(function(m){m.remove()});document.querySelectorAll('.err').forEach(function(m){m.classList.remove('err')});var prim=null;
-document.querySelectorAll('[data-req]').forEach(function(el){if(!vis(el))return;var vazio;if(el.classList.contains('op'))vazio=!val(el.dataset.name);else if(el.type=='checkbox')vazio=!el.checked;else if(el.type=='file')vazio=!el.files.length;else vazio=!el.value.trim();if(vazio){marca(el,'Campo obrigatório');prim=prim||el}});
-document.querySelectorAll('[data-chk]').forEach(function(el){if(vis(el)&&el.value&&!CHK[el.dataset.chk][0](el.value)){marca(el,CHK[el.dataset.chk][1]);prim=prim||el}});
-var cel=document.querySelector('[name="Celular"]');if(cel.value&&dig(cel.value).length<12){marca(cel,'Celular incompleto');prim=prim||cel}
-var ce=document.getElementById('cep');if(ce.value&&dig(ce.value).length!=8){marca(ce,'CEP incompleto');prim=prim||ce}
-if(prim){prim.scrollIntoView({behavior:'smooth',block:'center'});return}
-var campos=[];document.querySelectorAll('#f [name]').forEach(function(el){if(!vis(el)&&!(el.type=='radio'&&vis(el.closest('.op'))))return;if(el.type=='radio'){if(el.checked)campos.push([el.name,el.value])}else if(el.type=='checkbox'){campos.push([el.name,el.checked?el.value:''])}else if(el.type=='date'&&el.value){var p=el.value.split('-');campos.push([el.name,p[2]+'/'+p[1]+'/'+p[0]])}else campos.push([el.name,el.value])});
-var bt=document.getElementById('bt');bt.disabled=true;bt.textContent='Enviando...';
-Promise.all([].slice.call(document.querySelectorAll('[data-file]')).filter(vis).map(lerArq)).then(function(a){fetch('https://script.google.com/macros/s/AKfycbzHmMdCm7JVUoO2WzMy_al1ZEuvKIvfz9jnV37ibpYafUStPXTiP5fGxUHeXQ0v6SOT/exec',{method:'POST',headers:{'Content-Type':'text/plain;charset=utf-8'},body:JSON.stringify({campos:campos,arquivos:a.filter(Boolean)})}).then(function(r){return r.json()}).then(function(j){if(j.ok)(function(p){document.getElementById('app').innerHTML='<div class="card ok"><h2>Recebemos a sua ficha!</h2><p>Protocolo <b>'+p+'</b>.</p><p>Obrigado. Se faltar alguma informação, o escritório entra em contato.</p></div>';scrollTo(0,0)})(j.protocolo);else(function(m){bt.disabled=false;bt.textContent='Enviar ficha';alert('Não foi possível enviar agora. Tente de novo em alguns minutos. ('+m+')')})(j.erro||'erro')}).catch(function(e){(function(m){bt.disabled=false;bt.textContent='Enviar ficha';alert('Não foi possível enviar agora. Tente de novo em alguns minutos. ('+m+')')})(e.message||e)})}).catch(function(er){bt.disabled=false;bt.textContent='Enviar ficha';alert(er)})});
-</script></body></html>
+<div class="w">
+<h1>O que você precisa hoje?</h1>
+<div class="sub">Escolha abaixo. Cada caminho tem as perguntas do seu caso, uma tela de cada vez,
+e nada de documento neste momento. Depois que você enviar, a gente analisa e volta pelo e-mail
+e pelo WhatsApp que você informar.</div>
+<div class="menu">
+<a href="./abertura/"><b>Abrir empresa ou entidade</b><span>Nome pretendido, atividade, endereço, sócios e os dados da constituição. Serve também para quem ainda não decidiu o tipo de empresa.</span></a>
+<a href="./alteracao/"><b>Alterar empresa ou entidade</b><span>Endereço, atividade, nome, capital, sócios, administração, porte ou filial. Você marca o que muda e só aquelas perguntas aparecem.</span></a>
+<a href="./encerramento/"><b>Encerrar empresa ou entidade</b><span>Motivo, situação atual e o que ficou pendente, para a Elpee avaliar a baixa e dizer o caminho.</span></a>
+</div>
+<div class="rod">Precisa de outra coisa, ou ficou em dúvida sobre qual escolher? Fale com a gente
+e a gente indica o caminho.</div>
+</div></body></html>
